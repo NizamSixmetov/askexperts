@@ -1,0 +1,156 @@
+.firstDiv {
+  padding: 2rem 0;
+}
+
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.left > h1 {
+  font-family: Cabin;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+  /* width: 50%; */
+}
+
+.left > .one {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ffcc4a;
+  color: #181818;
+  width: fit-content;
+  padding: 0.3rem 1rem;
+}
+
+.left > .twoP {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #181818;
+  /* width: 40%; */
+}
+
+.left > .thee {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595566;
+  /* width: 38%; */
+}
+
+.flexDiv2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.topLine {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #d8d8d8;
+}
+
+.line {
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  background-color: #f6f6f6;
+  border-radius: 0.5rem;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* gap: .5rem; */
+}
+
+.leftDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #181818;
+}
+
+.starDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.starDiv > p {
+  font-family: Cabin;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #181818;
+}
+
+.centerLine {
+  border: 1px solid #d8d8d8;
+  width: 0px;
+  height: 60px;
+}
+
+.bottomLine {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+.right {
+  width: 100%;
+  position: relative;
+}
+
+.index1 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  width: 40%;
+}
+
+.index2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  left: 10%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.index3 {
+  position: absolute;
+  z-index: 3;
+  bottom: 6%;
+  left: 5%;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: -5px 22px 26px 0px #5f5f5f40;
+}

@@ -1,0 +1,27 @@
+.bgDiv {
+  background-color: #181818;
+}
+
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.left > i,
+.center > i {
+  color: #ffcc4a;
+}
