@@ -1,3 +1,4 @@
+import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";

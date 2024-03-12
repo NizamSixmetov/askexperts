@@ -37,7 +37,7 @@ const HomeAbout = () => {
                   <FaSmile style={{ color: "#4EAF4E", fontSize: "20px" }} />
                   <p>400 +</p>
                 </div>
-                <p>Business Services</p>
+                <p>Happy Customer</p>
               </div>
               <div className={`${styles.rightDiv}`}></div>
             </div>

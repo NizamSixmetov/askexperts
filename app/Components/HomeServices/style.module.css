@@ -1,0 +1,41 @@
+.bgDiv {
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.top > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0.1rem 1rem;
+  border-radius: 20px;
+  background-color: #4eaf4e;
+  width: fit-content;
+}
+
+.top > h2 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+  width: 65%;
+}

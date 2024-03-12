@@ -1,0 +1,191 @@
+.flex {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.rightDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.processP {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  background-color: #4eaf4e;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+.leftH2 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+}
+
+.leverageP {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595566;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0.5rem;
+  align-items: center;
+  border-top: 1px solid #c1c1c1;
+  padding: 2rem 0;
+}
+
+.inItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item > .span1 {
+  border: none;
+  border-radius: 50%;
+  padding: 0.4rem 0.9rem;
+  background-color: #ffcc4a;
+  font-family: Cabin;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.inItem > .oneP {
+  font-family: Cabin;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.inItem > .twoP {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #595566;
+}
+
+.item > .span2 {
+  background-color: #4eaf4e;
+  border: none;
+  border-radius: 50%;
+  padding: 0.4rem 0.9rem;
+  font-family: Cabin;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #fff;
+}
+
+.item > .span3 {
+  background-color: #181818;
+  border: none;
+  border-radius: 50%;
+  padding: 0.4rem 0.9rem;
+  font-family: Cabin;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #fff;
+}
+
+.rightP {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #181818;
+  background-color: #ffcc4a;
+  width: fit-content;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.rightDiv > h2 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #181818;
+}
+
+.rightOneP {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595566;
+}
+
+.rightOneFlex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cardFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+  border-radius: 1rem;
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+
+.cardFour > img {
+  width: 20%;
+}
+
+.fatP {
+  font-family: Cabin;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #181818;
+}
+
+.normalP {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #595566;
+}
+
+.flexFourDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
