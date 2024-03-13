@@ -5,6 +5,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -20,10 +21,18 @@ const Header = () => {
             <p>725 Park Ave, New York</p>
           </div>
           <div className={`${styles.right}`}>
-            <IoLogoInstagram />
-            <FaFacebook />
-            <FaTwitter />
-            <FaLinkedin />
+            <Link href={'https://www.instagram.com'} target='_blank'>
+              <IoLogoInstagram />
+            </Link>
+            <Link href={'https://www.facebook.com'} target='_blank'>
+              <FaFacebook />
+            </Link>
+            <Link href={'https://www.twitter.com'} target='_blank'>
+              <FaTwitter />
+            </Link>
+            <Link href={'https://www.linkedin.com'} target='_blank'>
+              <FaLinkedin />
+            </Link>
           </div>
         </div>
       </div>

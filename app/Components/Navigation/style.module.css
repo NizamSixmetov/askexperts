@@ -54,9 +54,6 @@
 
 .center > ul > li > a {
   font-family: Lato;
-  /* font-size: 18px; */
-  /* font-weight: 400; */
-  /* line-height: 28px; */
   color: #fff;
 }
 
@@ -64,3 +61,33 @@
   list-style: circle;
   color: #4eaf4e;
 }
+
+.button {
+  transition: 0.5s ease-in-out;
+}
+
+.button > p {
+  transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: transparent;
+
+  &.button > p {
+    color: #fff;
+  }
+
+  &.button > i {
+    color: #000;
+  }
+}
+
+/* .active {
+  color: red;
+  background-color: #ffc32b;
+}
+
+.all {
+  color: green;
+  background-color: #fff;
+} */

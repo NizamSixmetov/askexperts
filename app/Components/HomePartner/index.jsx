@@ -53,6 +53,6 @@ const HomePartner = () => {
       </Swiper>
     </div>
   )
-}
+};
 
-export default HomePartner
+export default HomePartner;

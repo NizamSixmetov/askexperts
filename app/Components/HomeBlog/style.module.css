@@ -1,0 +1,159 @@
+.bg {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+}
+
+.dataAndTextFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 17rem;
+}
+
+.left1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 30%;
+}
+
+.left1 > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  background-color: #4eaf4e;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  width: fit-content;
+}
+
+.left > h2 {
+  font-family: Cabin;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+}
+
+.right1 > a {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #181818;
+  background-color: #ffcc4a;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  transition: .5s ease-in-out;
+}
+
+.right1 > a:hover {
+  background-color: transparent;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+}
+
+.left2 {
+  width: 450px;
+  height: 220px;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.dataFlex1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text > h3 {
+  font-family: Cabin;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #181818;
+}
+
+.text > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595566;
+}
+
+.lineDiv {
+  border: 1px solid #c1c1c1;
+  width: 100%;
+}
+
+.smallInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.smallInfo > p {
+  color: #595566;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.smallInfo > img {
+  border-radius: 50%;
+}
+
+.smallBorder {
+  border: 1px solid #c1c1c1;
+  height: 10px;
+}
+
+.smallInfo > a {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #f5f5f5;
+  background-color: #181818;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}
+
+.smallInfo > a:hover {
+  color: #181818;
+  background-color: #f5f5f5;
+}

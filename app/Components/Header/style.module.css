@@ -21,6 +21,10 @@
   color: #ffffff;
 }
 
+.right > a {
+  color: #ffffff;
+}
+
 .left > i,
 .center > i {
   color: #ffcc4a;

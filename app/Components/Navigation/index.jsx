@@ -3,13 +3,19 @@ import styles from './style.module.css';
 import { FiPhone } from "react-icons/fi";
 
 
+
+
 const index = () => {
+
+
   return (
     <div className={`${styles.bgDiv}`}>
       <div className='container'>
         <div className={`${styles.flexDiv}`}>
           <div className={`${styles.left}`}>
-            <img src="/Navigation/LogoNavigation.svg" alt="logo" />
+            <Link href={'/'}>
+              <img src="/Navigation/LogoNavigation.svg" alt="logo" />
+            </Link>
           </div>
           <div className={`${styles.center}`}>
             <ul className={`${styles.flexUl}`}>
@@ -22,7 +28,7 @@ const index = () => {
             </ul>
           </div>
           <div className={`${styles.right}`}>
-            <button>
+            <button className={`${styles.button}`}>
               <i><FiPhone /></i>
               <p>+ (888) 452 1505</p>
             </button>
