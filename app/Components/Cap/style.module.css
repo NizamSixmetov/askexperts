@@ -47,22 +47,43 @@
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.leftButton:hover {
+  color: #181818;
+  background-color: transparent;
 }
 
 .rightButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 0.3rem;
   align-items: center;
+  text-align: center;
+  gap: 0.3rem;
   font-family: Lato;
   font-size: 13px;
   font-weight: 600;
   color: #353535;
-  background-color: #fff;
+  background-color: transparent;
   padding: 0.5rem 1rem;
   border-radius: 6rem;
   border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.rightButton:hover {
+  color: #fff;
+  background-color: #000;
+  &.rightButton > p {
+    color: #fff;
+    background-color: #000;
+  }
+  &.rightButton > i {
+    background-color: #000;
+    color: #fff;
+  }
 }
 
 .rightButton > i {
@@ -70,8 +91,8 @@
   overflow: none;
   background-color: #4eaf4e;
   border-radius: 50%;
-  border: none;
-  padding: 0.3rem 0.4rem;
+  padding: 0.5rem 0.4rem 0.3rem 0.4rem;
+  transition: 0.4s ease-in-out;
 }
 
 .rightButton > p {
@@ -79,6 +100,38 @@
   font-size: 13px;
   font-weight: 600;
   color: #353535;
-  background-color: #fff;
-  border-radius: 2rem;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv {
+    background-size: 100% 100% 100% 100%;
+    object-fit: cover;
+    padding: 2rem 0;
+  }
+
+  .flexDiv {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexDiv {
+    width: 80%;
+  }
+
+  .top > h2{
+    font-size: 25px;
+  }
+
+  .center > p {
+    font-size: 10x;
+    line-height: 20px;
+  }
+
+  .leftButton,
+  .rightButton {
+    font-size: 11px;
+  }
 }

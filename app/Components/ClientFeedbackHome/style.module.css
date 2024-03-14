@@ -2,7 +2,7 @@
   padding: 1rem 9;
   display: flex;
   flex-direction: column;
-  gap: 1rme;
+  gap: 1rem;
   justify-content: center;
   text-align: center;
 }
@@ -39,4 +39,38 @@
 
 .componentDiv {
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    gap: 0rem;
+  }
+
+  .flex > p {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .flex > h3 {
+    width: 69%;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    gap: 0rem;
+  }
+
+  .flex > p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .flex > h3 {
+    width: 89%;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

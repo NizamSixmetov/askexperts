@@ -6,8 +6,8 @@
   text-align: center;
   align-items: center;
   padding: 0 0 2rem 0;
-
 }
+
 .capDiv {
   font-family: Cabin;
   font-size: 25px;
@@ -15,10 +15,41 @@
   line-height: 28px;
   color: #181818;
 }
+
 .descriptionDiv {
   font-family: Cabin;
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
   color: #181818;
+}
+
+@media screen and (max-width: 992px) {
+  .capDiv {
+    font-size: 22px;
+  }
+
+  .descriptionDiv {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .capDiv {
+    font-size: 20px;
+  }
+
+  .descriptionDiv {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .capDiv {
+    font-size: 19px;
+  }
+
+  .descriptionDiv {
+    font-size: 14px;
+  }
 }

@@ -29,3 +29,22 @@
 .center > i {
   color: #ffcc4a;
 }
+
+@media screen and (max-width: 768px) {
+  .flexDiv {
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .flexDiv > .right {
+    display: none;
+  }
+
+  .flexDiv > .left {
+    font-size: 12px;
+  }
+
+  .flexDiv > .center {
+    font-size: 12px;
+  }
+}

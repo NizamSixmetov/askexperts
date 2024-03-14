@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './style.module.css';
 import { FiPhone } from "react-icons/fi";
+import MobileMenu from '../MobileMenu';
 
 
 
@@ -32,6 +33,9 @@ const index = () => {
               <i><FiPhone /></i>
               <p>+ (888) 452 1505</p>
             </button>
+          </div>
+          <div className={`${styles.toggleDiv}`}>
+            <MobileMenu />
           </div>
         </div>
       </div>

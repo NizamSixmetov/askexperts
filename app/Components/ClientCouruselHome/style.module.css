@@ -25,3 +25,15 @@
   line-height: 24px;
   color: #4eaf4e;
 }
+
+@media screen and (max-width: 576px) {
+  .swiperDiv {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiperDiv {
+    width: 90%;
+  }
+}

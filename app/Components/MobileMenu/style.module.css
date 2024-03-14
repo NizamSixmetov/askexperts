@@ -1,0 +1,30 @@
+.toggleDiv > button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.toggleDiv > button:hover {
+  color: #ffc32b;
+}
+
+/* @media screen and (max-width: 1400px) {
+  .toggleDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .toggleDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .toggleDiv {
+    display: block;
+  }
+} */

@@ -71,3 +71,27 @@
   background-color: transparent;
   color: #fff;
 }
+
+@media screen and (max-width: 992px) {
+  .bg {
+    padding: 2rem 0;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text > h2 {
+    font-size: 30px;
+  }
+
+  .text > h2 > span {
+    font-size: 30px;
+  }
+
+  .left > button {
+    font-size: 15px;
+  }
+}

@@ -23,7 +23,7 @@ const HomeAbout = () => {
             <div className={`${styles.line}`}>
               <div className={`${styles.leftDiv}`}>
                 <div className={`${styles.starDiv}`}>
-                  <FaStar style={{ color: "#FFCC4A", fontSize: "20px" }} />
+                  <i className={`${styles.star}`}><FaStar /></i>
                   <p>400 +</p>
                 </div>
                 <p>Business Services</p>
@@ -34,12 +34,11 @@ const HomeAbout = () => {
             <div className={`${styles.line}`}>
               <div className={`${styles.leftDiv}`}>
                 <div className={`${styles.starDiv}`}>
-                  <FaSmile style={{ color: "#4EAF4E", fontSize: "20px" }} />
+                  <i className={`${styles.smile}`}><FaSmile /></i>
                   <p>400 +</p>
                 </div>
                 <p>Happy Customer</p>
               </div>
-              <div className={`${styles.rightDiv}`}></div>
             </div>
           </div>
           <div className={`${styles.bottomLine}`}></div>

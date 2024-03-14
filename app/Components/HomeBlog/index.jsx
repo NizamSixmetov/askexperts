@@ -42,7 +42,7 @@ const HomeBlog = async () => {
                       <h3>{cap}</h3>
                       <p>{description}</p>
                     </div>
-                    <div className={`${styles.lineDiv}`}></div>
+                    <div className={`${styles.lineDiv} ${styles.lineHide}`}></div>
                     <div className={`${styles.smallInfo}`}>
                       <img src={profileImage} alt="Image" />
                       <p>{name}</p>
@@ -50,6 +50,7 @@ const HomeBlog = async () => {
                       <p>{date}</p>
                       <Link href={'/'}>Read More</Link>
                     </div>
+                    <div className={`${styles.lineDiv}`}></div>
                   </div>
                 )
               })

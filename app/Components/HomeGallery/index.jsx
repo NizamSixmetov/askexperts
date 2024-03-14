@@ -12,8 +12,6 @@ async function HomeGallery() {
   const card = await fetchData();
   return (
     <div className={`${styles.positionDiv}`}>
-      <div className={`${styles.topBg}`}></div>
-      <div className={`${styles.bottomBg}`}></div>
       <div className={`${styles.absoluteDiv}`}>
         <div className={`${styles.topDiv}`}>
           <p>Proccess</p>
@@ -38,8 +36,8 @@ async function HomeGallery() {
                     style={{ borderRadius: "1rem" }}
                     alt='Image'
                     src={image}
-                    width={190}
-                    height={190} />
+                    fill
+                  />
                 </div>
               )
             })

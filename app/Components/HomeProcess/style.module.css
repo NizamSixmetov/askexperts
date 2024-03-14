@@ -134,7 +134,6 @@
   font-size: 35px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: left;
   color: #181818;
 }
@@ -188,4 +187,112 @@
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .leftDiv > .processP {
+    font-size: 11px;
+  }
+
+  .leftDiv > h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .leftDiv > .leverageP {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .inItem {
+    gap: 0.3rem;
+  }
+
+  .inItem > .oneP {
+    font-size: 18px;
+  }
+
+  .item {
+    padding: 1rem 0;
+  }
+
+  .item > .span1 {
+    font-size: 18px;
+    padding: 0.3rem 0.9rem;
+  }
+
+  .item > .span2 {
+    font-size: 18px;
+    padding: 0.3rem 0.9rem;
+  }
+
+  .item > .span3 {
+    font-size: 18px;
+    padding: 0.3rem 0.9rem;
+  }
+
+  .rightP {
+    font-size: 11px;
+  }
+
+  .rightDiv > h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .rightOneP,
+  .rightOneP {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .flexFourDiv {
+    gap: 0.5rem;
+  }
+
+  .rightOneFlex {
+    gap: 0.5rem;
+  }
+
+  .cardFour {
+    gap: 0.5rem;
+  }
+
+  .fatP {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .flex {
+    gap: 1.5rem;
+  }
+
+  .normalP {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .rightDiv {
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    align-items: center;
+  }
+
+  .leftDiv {
+    width: 95%;
+  }
+
+  .rightDiv {
+    width: 95%;
+  }
 }

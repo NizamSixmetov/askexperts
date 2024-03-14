@@ -39,3 +39,21 @@
   line-height: 35px;
   width: 65%;
 }
+
+@media screen and (max-width: 768px) {
+  .top > h2 {
+    font-size: 30px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top > p {
+    font-size: 12px;
+    padding: 0.1rem .5rem;
+  }
+
+  .top > h2 {
+    font-size: 25px;
+  }
+}

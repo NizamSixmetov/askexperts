@@ -1,31 +1,25 @@
 .positionDiv {
   position: relative;
   width: 100%;
-}
-
-.topBg {
-  background-image: radial-gradient(
-    rgba(255, 204, 74, 0.2) 2px,
-    transparent 2px
+  z-index: 2;
+  padding: 25rem 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 37%,
+    rgba(0, 0, 0, 1) 38%
   );
-  background-size: 32px 32px;
-  background-color: #181818;
-  padding: 10rem 0;
-}
-
-.bottomBg {
-  background-color: #fff;
-  padding: 10rem 0;
 }
 
 .absoluteDiv {
   position: absolute;
   left: 50%;
   translate: -50%;
-  bottom: 3rem;
+  bottom: 0rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 51%;
 }
 
 .topDiv {
@@ -52,7 +46,6 @@
   justify-content: center;
   width: fit-content;
   align-items: end;
-  /* gap: 5rem; */
 }
 
 .flexTop h2 {
@@ -92,10 +85,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
   width: 100%;
 }
 
 .dataCard {
-  width: 30%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  .positionDiv {
+    display: none;
+  }
 }

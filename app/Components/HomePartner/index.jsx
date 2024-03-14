@@ -14,8 +14,7 @@ const HomePartner = () => {
         slidesPerView={5}
         className="mySwiper"
         autoplay={{
-          delay: 1000,
-          pauseOnMouseEnter: true,
+          delay: 1500,
         }}
         loop={true}
         modules={[Autoplay]}

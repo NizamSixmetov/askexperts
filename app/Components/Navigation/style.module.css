@@ -91,3 +91,28 @@
   color: green;
   background-color: #fff;
 } */
+
+
+@media screen and (max-width: 1400px) {
+  .toggleDiv {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .toggleDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .flexDiv > .center,
+  .flexDiv > .right {
+    display: none;
+  }
+
+  .flexDiv > .toggleDiv {
+    display: block;
+  }
+}
