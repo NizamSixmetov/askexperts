@@ -1,3 +1,17 @@
+.scrollDiv {
+  position: fixed;
+  width: 100%;
+  top: 3.5rem;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+
+.scrolled {
+  top: 0px;
+  background-color: #eae8e8;
+}
+
 .bgDiv {
   background-color: #1b1b1be8;
   padding: 1rem 0;
@@ -11,13 +25,44 @@
   gap: 1rem;
 }
 
-.flexUl {
+.left > a > img {
+  transition: 0.3s ease-in-out;
+}
+
+.left > a > img:hover {
+  transform: scale(0.97);
+}
+
+.li {
+  list-style: circle;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.aTag {
+  font-family: Lato;
+  font-size: 17.73px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.li:hover {
+  color: #ffc32b;
+}
+
+.li:hover .aTag {
+  color: #ffc32b;
+}
+
+.center > .linksDiv {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2.1rem;
-  text-align: center;
-  align-items: center;
+  gap: 2rem;
+}
+
+.active {
+  color: #5ab612;
+  list-style: disc;
 }
 
 .right > button {
@@ -43,25 +88,6 @@
   text-align: center;
 }
 
-.center > ul > li {
-  list-style: circle;
-  color: #fff;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.center > ul > li > a {
-  font-family: Lato;
-  color: #fff;
-}
-
-.active {
-  list-style: circle;
-  color: #4eaf4e;
-}
-
 .button {
   transition: 0.5s ease-in-out;
 }
@@ -82,25 +108,13 @@
   }
 }
 
-/* .active {
-  color: red;
-  background-color: #ffc32b;
-}
-
-.all {
-  color: green;
-  background-color: #fff;
-} */
-
-
 @media screen and (max-width: 1400px) {
   .toggleDiv {
     display: none;
   }
 }
 
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .toggleDiv {
     display: none;
   }

@@ -23,10 +23,30 @@
 
 .right > a {
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.right > a:hover {
+  color: #ffcc4a;
 }
 
 .left > i,
 .center > i {
+  color: #ffcc4a;
+}
+
+.left > p,
+.center > p {
+  color: white;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.left > p:hover,
+.center > p:hover {
   color: #ffcc4a;
 }
 

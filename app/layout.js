@@ -2,6 +2,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
+import Navigation from "./Components/Navigation/index";
+import Footer from "./Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

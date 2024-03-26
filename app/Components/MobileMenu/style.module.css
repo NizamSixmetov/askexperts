@@ -11,20 +11,106 @@
   color: #ffc32b;
 }
 
-/* @media screen and (max-width: 1400px) {
-  .toggleDiv {
-    display: none;
+.mobileMenu {
+  position: fixed;
+  z-index: 99;
+  background-color: #1b1b1be8;
+  inset: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.font {
+  height: 101vh;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: end;
+}
+
+.buttonDiv > button {
+  font-size: 35px;
+  margin-top: 4.7rem;
+  background-color: transparent;
+  border: none;
+}
+
+.buttonDiv > button > i {
+  color: #ffc32b;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttonDiv > button > i:hover {
+  color: #5ab612;
+}
+
+.mobileSocial {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mobileSocial > a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+.mobileSocial > a:hover {
+  color: #ffc32b;
+}
+
+.navDiv {
+  width: fit-content;
+}
+
+.li {
+  list-style: circle;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.aTag {
+  font-family: Lato;
+  font-size: 17.73px;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.li:hover {
+  color: #ffc32b;
+}
+
+.li:hover .aTag {
+  color: #ffc32b;
+}
+
+.center > .linksDiv {
+  display: flex;
+  gap: 2rem;
+}
+
+.active {
+  color: #5ab612;
+  list-style: disc;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonDiv > button {
+    margin-top: 4.5rem;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .toggleDiv {
-    display: none;
+@media screen and (max-width: 576px) {
+  .buttonDiv > button {
+    margin-top: 4.4rem;
+  }
+  .navDiv {
+    margin-left: 1.1rem;
   }
 }
-
-@media screen and (max-width: 992px) {
-  .toggleDiv {
-    display: block;
-  }
-} */
