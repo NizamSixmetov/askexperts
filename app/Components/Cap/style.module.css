@@ -135,3 +135,10 @@
     font-size: 11px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .bgDiv {
+    padding: 6.5rem 0 5rem 0;
+    background-position: center;
+  }
+}

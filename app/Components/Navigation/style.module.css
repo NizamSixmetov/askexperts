@@ -8,8 +8,9 @@
 }
 
 .scrolled {
-  top: 0px;
+  top: -1px;
   background-color: #eae8e8;
+  width: 100%;
 }
 
 .bgDiv {
@@ -128,5 +129,15 @@
 
   .flexDiv > .toggleDiv {
     display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scrollDiv {
+    top: 3.2rem;
+  }
+
+  .scrolled {
+    top: -1px;
   }
 }

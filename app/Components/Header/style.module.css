@@ -68,3 +68,13 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .flexDiv > .left > p {
+    font-size: 12px;
+  }
+
+  .flexDiv > .center > p {
+    font-size: 12px;
+  }
+}
