@@ -1,0 +1,169 @@
+.paddingDiv {
+  padding: 2rem 0;
+}
+
+.firstP {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  border-radius: 2rem;
+  background-color: #4eaf4e;
+  width: fit-content;
+  padding: 0 0.5rem;
+  color: white;
+  margin: 1rem 0;
+}
+
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.leftDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightDiv {
+  width: 100%;
+}
+
+.h3Div > h3 {
+  font-family: Cabin;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+}
+
+.pDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #595566;
+  width: 90%;
+}
+
+.flexDiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.topVariant,
+.bottomVariant {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: left;
+  align-items: start;
+}
+
+.topVariant > i,
+.bottomVariant > i {
+  color: #4eaf4e;
+  font-size: 26px;
+}
+
+.topVariant > p,
+.bottomVariant > p {
+  font-family: Cabin;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #595566;
+  width: 80%;
+}
+
+.rightDiv {
+  position: relative;
+}
+
+.rightDiv > .index1 {
+  position: absolute;
+  z-index: -1;
+  top: -45px;
+  right: 50px;
+}
+
+.rightDiv > .index2 {
+  position: absolute;
+  top: -20px;
+  right: 85px;
+  background-color: #4eaf4e;
+  padding: 4rem 4rem;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.rightDiv > .index3 {
+  border-radius: 2rem;
+  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  .flexDiv {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .h3Div > h3 {
+    font-family: Cabin;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #181818;
+  }
+
+  .pDiv > p {
+    font-family: Lato;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #595566;
+    width: 90%;
+  }
+
+  .topVariant > i,
+  .bottomVariant > i {
+    color: #4eaf4e;
+    font-size: 30px;
+  }
+
+  .topVariant > p,
+  .bottomVariant > p {
+    font-family: Cabin;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #595566;
+    width: 80%;
+  }
+
+  .rightDiv > .index3 {
+    border-radius: 2rem;
+    width: 90%;
+  }
+
+  .rightDiv > .index1 {
+    position: absolute;
+    z-index: -1;
+    top: -45px;
+    right: -10px;
+  }
+
+  .rightDiv > .index2 {
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    background-color: #4eaf4e;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    z-index: -1;
+  }
+}

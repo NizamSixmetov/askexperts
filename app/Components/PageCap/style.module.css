@@ -1,0 +1,71 @@
+.bgDiv {
+  background-color: #ffffffd9;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.bgDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  background-color: #ffcc4a;
+  padding: 0 0.3rem 0 0.3rem;
+  width: fit-content;
+  border-radius: 2rem;
+}
+
+.bgDiv > h2 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 58px;
+  width: 30rem;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv > p {
+    font-size: 14px;
+  }
+
+  .bgDiv > h2 {
+    font-size: 30px;
+    line-height: 50px;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgDiv {
+    width: fit-content;
+    padding: 1.5rem;
+  }
+
+  .bgDiv > p {
+    font-size: 13px;
+  }
+
+  .bgDiv > h2 {
+    font-size: 28px;
+    line-height: 35px;
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .bgDiv {
+    width: fit-content;
+    padding: 1.5rem;
+  }
+
+  .bgDiv > p {
+    font-size: 12px;
+  }
+
+  .bgDiv > h2 {
+    font-size: 25px;
+    line-height: 30px;
+    width: 12rem;
+  }
+}
