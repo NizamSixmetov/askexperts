@@ -6,6 +6,7 @@ import ProjectNumber from "../Components/ProjectNumber";
 import AboutClients from "../Components/AboutClients";
 import AboutHistory from "../Components/AboutHistory";
 import AboutTeam from "../Components/AboutTeam";
+import HomeBookNow from "../Components/HomeBookNow";
 
 const About = () => {
   return (
@@ -25,6 +26,9 @@ const About = () => {
       <AboutClients />
       <AboutHistory />
       <AboutTeam />
+      <div style={{padding:"4rem 0"}}>
+        <HomeBookNow />
+      </div>
     </div>
   );
 };
