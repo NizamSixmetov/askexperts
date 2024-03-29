@@ -94,7 +94,7 @@
 .rightDiv > .index2 {
   position: absolute;
   top: -20px;
-  right: 85px;
+  right: 70px;
   background-color: #4eaf4e;
   padding: 4rem 4rem;
   border-radius: 1rem;
@@ -104,6 +104,54 @@
 .rightDiv > .index3 {
   border-radius: 2rem;
   width: 80%;
+}
+
+@media screen and (max-width: 1400px) {
+  .rightDiv > .index1 {
+    position: absolute;
+    z-index: -1;
+    top: -45px;
+    right: 50px;
+  }
+
+  .rightDiv > .index2 {
+    position: absolute;
+    top: -20px;
+    right: 90px;
+    background-color: #4eaf4e;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    z-index: -1;
+  }
+
+  .rightDiv > .index3 {
+    border-radius: 2rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rightDiv > .index1 {
+    position: absolute;
+    z-index: -1;
+    top: -45px;
+    right: 50px;
+  }
+
+  .rightDiv > .index2 {
+    position: absolute;
+    top: -20px;
+    right: 70px;
+    background-color: #4eaf4e;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    z-index: -1;
+  }
+
+  .rightDiv > .index3 {
+    border-radius: 2rem;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -145,6 +193,10 @@
     width: 80%;
   }
 
+  .rightDiv {
+    text-align: center;
+  }
+
   .rightDiv > .index3 {
     border-radius: 2rem;
     width: 90%;
@@ -154,16 +206,91 @@
     position: absolute;
     z-index: -1;
     top: -45px;
-    right: -10px;
+    right: -5px;
   }
 
   .rightDiv > .index2 {
     position: absolute;
     top: -20px;
-    right: 30px;
+    right: 10px;
     background-color: #4eaf4e;
     padding: 4rem 4rem;
     border-radius: 1rem;
     z-index: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .firstP {
+    font-size: 13px;
+  }
+
+  .rightDiv {
+    display: none;
+  }
+
+  .h3Div > h3 {
+    font-size: 35px;
+  }
+
+  .pDiv > p {
+    font-size: 16px;
+  }
+
+  .topVariant > i,
+  .bottomVariant > i {
+    font-size: 20px;
+  }
+
+  .topVariant > p,
+  .bottomVariant > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .paddingDiv {
+    width: 90%;
+  }
+
+  .firstP {
+    font-size: 11px;
+  }
+
+  .flexDiv {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .leftDiv {
+    margin: 0 auto;
+  }
+
+  .rightDiv {
+    display: none;
+  }
+
+  .h3Div > h3 {
+    font-size: 35px;
+    line-height: 35px;
+    width: 100%;
+  }
+
+  .pDiv > p {
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+  }
+
+  .topVariant > i,
+  .bottomVariant > i {
+    color: #4eaf4e;
+    font-size: 20px;
+  }
+
+  .topVariant > p,
+  .bottomVariant > p {
+    font-size: 16px;
+    width: 100%;
   }
 }

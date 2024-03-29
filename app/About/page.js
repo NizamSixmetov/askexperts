@@ -3,6 +3,9 @@ import styles from "./style.module.css";
 import PageCap from "../Components/PageCap";
 import AboutVision from "../Components/AboutVision";
 import ProjectNumber from "../Components/ProjectNumber";
+import AboutClients from "../Components/AboutClients";
+import AboutHistory from "../Components/AboutHistory";
+import AboutTeam from "../Components/AboutTeam";
 
 const About = () => {
   return (
@@ -19,6 +22,9 @@ const About = () => {
       </div>
       <AboutVision />
       <ProjectNumber />
+      <AboutClients />
+      <AboutHistory />
+      <AboutTeam />
     </div>
   );
 };

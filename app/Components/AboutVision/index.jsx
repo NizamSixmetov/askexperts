@@ -39,9 +39,17 @@ const AboutVision = () => {
           </div>
         </div>
         <div className={`${styles.rightDiv}`}>
-          <img className={`${styles.index1}`} src="/AboutUsImages/BackgroundImage.svg" alt="Image" />
+          <img
+            className={`${styles.index1}`}
+            src="/AboutUsImages/BackgroundImage.svg"
+            alt="Image"
+          />
           <div className={`${styles.index2}`}></div>
-          <img className={`${styles.index3}`} src="/AboutUsImages/Photo1Photo.svg" alt="Image" />
+          <img
+            className={`${styles.index3}`}
+            src="/AboutUsImages/Photo1Photo.svg"
+            alt="Image"
+          />
         </div>
       </div>
     </div>
