@@ -1,5 +1,6 @@
 import HomeServices from "../Components/HomeServices";
 import PageCap from "../Components/PageCap";
+import ServicesProcess from "../Components/ServicesProcess";
 import styles from "./style.module.css";
 
 const services = () => {
@@ -16,6 +17,7 @@ const services = () => {
         </div>
       </div>
       <HomeServices />
+      <ServicesProcess />
     </div>
   );
 };
