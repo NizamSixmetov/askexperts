@@ -1,7 +1,9 @@
-import HomeServices from "../Components/HomeServices";
 import PageCap from "../Components/PageCap";
 import ServicesProcess from "../Components/ServicesProcess";
 import styles from "./style.module.css";
+import ServicesPricing from "../Components/ServicesPricing";
+import HomeContact from "../Components/HomeContact";
+import HomeServices from "../Components/HomeServices";
 
 const services = () => {
   return (
@@ -18,6 +20,8 @@ const services = () => {
       </div>
       <HomeServices />
       <ServicesProcess />
+      <ServicesPricing />
+      <HomeContact />
     </div>
   );
 };

@@ -8,7 +8,6 @@ import HomeGallery from "./Components/HomeGallery";
 import HomePartner from "./Components/HomePartner";
 import HomeProcess from "./Components/HomeProcess";
 import HomeServices from "./Components/HomeServices";
-// import Navigation from "./Components/Navigation/index";
 import ProjectNumber from "./Components/ProjectNumber";
 
 export default function Home() {

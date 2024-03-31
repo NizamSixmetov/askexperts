@@ -1,0 +1,41 @@
+.flexDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #f5f5f5;
+}
+
+.flexDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #181818;
+  padding: 0 0.4rem;
+  background-color: #4eaf4e;
+  color: #181818;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.flexDiv > h3 {
+  font-family: Cabin;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+}
+
+@media screen and (max-width: 576px) {
+  .flexDiv > h3 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .flexDiv > p {
+    font-size: 14px;
+  }
+}

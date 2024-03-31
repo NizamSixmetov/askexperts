@@ -1,0 +1,149 @@
+.flexDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.card:hover span {
+  background-color: #4eaf4e;
+}
+
+.card:hover a {
+  background-color: #ffcc4a;
+}
+
+.top {
+  background-color: #303030;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.top > h4 {
+  font-family: Cabin;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.top > p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.top > .lineDiv {
+  border: 1px dashed #565656;
+}
+
+.priceDiv {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.priceDiv > p {
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.priceDiv > span {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #3e3e3e;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s ease-in-out;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.center > .servicesDiv {
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.servicesDiv > i {
+  background-color: #181818;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  font-size: 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom > a {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #181818;
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+  border-radius: 1rem;
+  padding: 0.8rem 0;
+  width: 100%;
+  transition: 0.7s ease-in-out;
+}
+
+.bottom > a:hover {
+  background-color: #4eaf4e;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+  }
+}

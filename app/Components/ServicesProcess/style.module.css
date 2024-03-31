@@ -145,6 +145,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .flexDiv {
+    padding: 3.5rem 0.5rem;
+  }
+  
   .left {
     display: none;
   }
