@@ -1,3 +1,4 @@
+import styles from "./style.module.css";
 import PageCap from "@/app/Components/PageCap";
 import Image from "next/image";
 
@@ -10,12 +11,27 @@ async function fetchData(id) {
 const ServiceSingle = async ({ params: { id } }) => {
   const data = await fetchData(id);
   return (
-    <div style={{ margin: "5rem 0" }}>
-      <h1>{id}</h1>
-      <h2>{data.cap}</h2>
-      <h2>{data.description}</h2>
-      <h2>{data.url}</h2>
-      <Image src={data.url} width={100} height={100} alt="asdasd" />
+    <div className={`${styles.firstBgDiv}`}>
+      <div className={`${styles.marginDiv}`}>
+        <div className={`${styles.bgDiv}`}>
+          <div className="container">
+            <PageCap
+              pElemnt={"Services"}
+              h2Element={"Creative Services For Boost Your Business Growth"}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className={`${styles.flexDiv}`}>
+          <Image src={data.url} alt="Image" width={100} height={100} />
+          <h3>{data.cap}</h3>
+          <div>
+            <p>{data.singlePageDescription}</p>
+            
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
