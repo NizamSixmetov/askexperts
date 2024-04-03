@@ -1,0 +1,139 @@
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 0.7rem;
+  justify-content: center;
+}
+
+.flexDiv > .left {
+  position: relative;
+  width: 100%;
+}
+
+.flexDiv > .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: -30px;
+}
+
+.flexDiv > .left > .bodyImage {
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.flexDiv > .left > .bgImage {
+  position: absolute;
+  top: -40px;
+  left: -45px;
+  z-index: -1;
+  width: 30%;
+}
+
+.flexDiv > .left > .squareDiv {
+  position: absolute;
+  background-color: #4eaf4e;
+  padding: 4rem;
+  top: -20px;
+  left: -20px;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.flexDiv > .right > .cap {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #181818;
+  border-radius: 1rem;
+  background-color: #ffcc4a;
+  padding: 0.1rem 1rem;
+  width: fit-content;
+}
+
+.flexDiv > .right > h3 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  color: #181818;
+}
+
+.flexDiv > .right > .description {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #595566;
+  width: fit-content;
+}
+
+.right > .iconsAndText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.right > .iconsAndText > .icon {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.right > .iconsAndText > .icon > i {
+  color: #4eaf4e;
+  font-size: 20px;
+}
+
+.right > .iconsAndText > .icon > p {
+  font-family: Cabin;
+  font-size: 16px;
+  font-weight: 400;
+  color: #595566;
+}
+
+@media screen and (max-width: 992px) {
+  .flexDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .cap {
+    display: none;
+  }
+
+  .bodyImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexDiv > .right > .cap {
+    font-size: 13px;
+    padding: 0.1rem 0.6rem;
+  }
+
+  .flexDiv > .right > h3 {
+    font-size: 30px;
+  }
+
+  .flexDiv > .right > .description {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .right > .iconsAndText > .icon > i {
+    font-size: 19px;
+  }
+
+  .right > .iconsAndText > .icon > p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flexDiv > .left {
+    display: none;
+  }
+}

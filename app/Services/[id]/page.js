@@ -1,5 +1,8 @@
+import HomePartner from "@/app/Components/HomePartner";
 import styles from "./style.module.css";
 import PageCap from "@/app/Components/PageCap";
+import ServiceSingleSwiper from "@/app/Components/ServiceSingleSwiper";
+import ServiceSingleWill from "@/app/Components/ServiceSingleWill";
 import Image from "next/image";
 
 async function fetchData(id) {
@@ -11,26 +14,32 @@ async function fetchData(id) {
 const ServiceSingle = async ({ params: { id } }) => {
   const data = await fetchData(id);
   return (
-    <div className={`${styles.firstBgDiv}`}>
-      <div className={`${styles.marginDiv}`}>
-        <div className={`${styles.bgDiv}`}>
-          <div className="container">
-            <PageCap
-              pElemnt={"Services"}
-              h2Element={"Creative Services For Boost Your Business Growth"}
-            />
+    <div>
+      <div className={`${styles.firstBgDiv}`}>
+        <div className={`${styles.marginDiv}`}>
+          <div className={`${styles.bgDiv}`}>
+            <div className="container">
+              <PageCap
+                pElemnt={"Services"}
+                h2Element={"Creative Services For Boost Your Business Growth"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className={`${styles.flexDiv}`}>
+            <Image src={data.url} alt="Image" width={100} height={100} />
+            <h3>{data.cap}</h3>
+            <p>{data.singlePageDescription}</p>
+          </div>
+          <div>
+            <ServiceSingleSwiper />
           </div>
         </div>
       </div>
       <div className="container">
-        <div className={`${styles.flexDiv}`}>
-          <Image src={data.url} alt="Image" width={100} height={100} />
-          <h3>{data.cap}</h3>
-          <div>
-            <p>{data.singlePageDescription}</p>
-            
-          </div>
-        </div>
+        <ServiceSingleWill />
+        <HomePartner />
       </div>
     </div>
   );
