@@ -4,6 +4,9 @@ import PageCap from "@/app/Components/PageCap";
 import ServiceSingleSwiper from "@/app/Components/ServiceSingleSwiper";
 import ServiceSingleWill from "@/app/Components/ServiceSingleWill";
 import Image from "next/image";
+import ServiceDetailHistory from "@/app/Components/ServiceDetailHistory";
+import ServiceDetailProces from "@/app/Components/ServiceDetailProces";
+import ServiceSingleFAQ from "@/app/Components/ServiceSingleFAQ";
 
 async function fetchData(id) {
   const url = await fetch("http://localhost:3000/api/data/" + id);
@@ -40,6 +43,13 @@ const ServiceSingle = async ({ params: { id } }) => {
       <div className="container">
         <ServiceSingleWill />
         <HomePartner />
+      </div>
+      <div>
+        <ServiceDetailHistory />
+      </div>
+      <div className="container">
+        <ServiceDetailProces />
+        <ServiceSingleFAQ />
       </div>
     </div>
   );

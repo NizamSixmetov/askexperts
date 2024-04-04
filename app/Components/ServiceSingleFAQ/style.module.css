@@ -1,0 +1,70 @@
+.cardDiv {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  border-radius: 1rem;
+  background-color: #4eaf4e;
+  width: fit-content;
+  padding: 0.1rem 0.5rem;
+}
+
+.center > h3 {
+  font-family: Cabin;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #181818;
+}
+
+@media screen and (max-width: 992px) {
+  .top > p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .center > h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .center > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top > p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .center > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

@@ -1,8 +1,8 @@
 .bgDiv {
   background-color: #ffffffd9;
-  width: fit-content;
   padding: 2rem;
   border-radius: 2rem;
+  width: fit-content;
 }
 
 .bgDiv > p {
@@ -21,7 +21,7 @@
   font-size: 35px;
   font-weight: 700;
   line-height: 58px;
-  width: 30rem;
+  width: 27rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .bgDiv {
     width: fit-content;
     padding: 1.5rem;

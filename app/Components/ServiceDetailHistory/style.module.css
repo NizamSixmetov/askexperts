@@ -1,0 +1,105 @@
+.bgDiv {
+  background-color: #181818;
+  padding: 3rem 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top > p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  background-color: #4eaf4e;
+  border-radius: 1rem;
+  width: fit-content;
+  padding: 0.1rem 0.5rem;
+}
+
+.center {
+  width: 50%;
+}
+
+.center > h3 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.bottom > img {
+  width: 30%;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+}
+
+.bottom > .topFrame {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  z-index: -1;
+  padding: 3rem;
+  background-color: #4eaf4e;
+  border-radius: 1rem;
+}
+
+.bottom > .bottomFrame {
+  position: absolute;
+  bottom: -10px;
+  right: -20px;
+  z-index: -1;
+  padding: 3rem;
+  background-color: #ffcc4a;
+  border-radius: 1rem;
+}
+
+.bottom > iframe {
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .center > h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .center > h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .center {
+    width: 95%;
+  }
+
+  .top > p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0.1rem 0.3rem;
+  }
+}
