@@ -1,0 +1,76 @@
+.bgDiv {
+  background-color: #181818;
+  border-radius: 1rem;
+  padding: 2.5rem 3rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.paddingDiv {
+  padding: 3rem 1rem;
+}
+
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.right {
+  width: 40%;
+}
+
+.left > h4 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.left > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.right {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right > input {
+  padding: 0.8rem 0.8rem;
+  border-radius: 2rem;
+  width: 100%;
+  height: fit-content;
+  border: none;
+  outline: none;
+}
+
+.right > button {
+  padding: 0.8rem 0.8rem;
+  border-radius: 2rem;
+  background-color: #ffcc4a;
+  color: #181818;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.4s ease-in-out;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.right > button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}

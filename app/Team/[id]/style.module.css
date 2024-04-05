@@ -1,0 +1,249 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  gap: 4rem;
+  width: 100%;
+}
+
+.left {
+  width: fit-content;
+  justify-content: right;
+}
+
+.right {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.imagesDiv {
+  position: relative;
+  width: 250px;
+  height: 360px;
+}
+
+.imagesDiv > .posImage {
+  position: absolute;
+  width: 60%;
+  top: -40px;
+  left: -40px;
+  border-radius: 0px;
+  z-index: -1;
+}
+
+.imagesDiv > .frameDiv {
+  position: absolute;
+  padding: 2.5rem 3.5rem;
+  top: -20px;
+  left: -20px;
+  background-color: #4eaf4e;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.imagesDiv > img {
+  border-radius: 1rem;
+}
+
+.marginDiv {
+  padding-top: 4.9rem;
+  background-color: #181818;
+}
+
+.bottomFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nameDiv > h4 {
+  font-family: Cabin;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #181818;
+}
+
+.topBorder {
+  border: 1px solid #c1c1c1;
+  height: 24px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social > a {
+  color: #181818;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.social > a:hover {
+  color: #ffcc4a;
+}
+
+.firstP {
+  font-family: Cabin;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #595566;
+  margin-top: -15px;
+}
+
+.twoP {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #595566;
+}
+
+.bottomLine {
+  width: 100%;
+  border: 1px solid #c1c1c1;
+}
+
+.right > h4 {
+  font-family: Cabin;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #181818;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    gap: 1rem;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .nameDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nameDiv > h4 {
+    font-family: Cabin;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #181818;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .social > a {
+    color: #181818;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .firstP {
+    margin-top: -10px;
+  }
+  .right {
+    gap: 0.5rem;
+  }
+
+  .twoP {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .imagesDiv {
+    position: relative;
+    width: 230px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .imagesDiv {
+    width: 450px;
+    height: 500px;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+  }
+
+  .imagesDiv {
+    width: 100%;
+  }
+
+  .imagesDiv > img {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    width: 100%;
+  }
+
+  .imagesDiv {
+    width: 330px;
+    height: 350px;
+  }
+
+  .left {
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .right {
+    width: 100%;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 import PageCap from "../Components/PageCap";
 import TeamList from "../Components/TeamList";
+import TeamContact from "../Components/TeamContact";
 
 const Team = () => {
   return (
@@ -15,6 +16,7 @@ const Team = () => {
       </div>
       <div>
         <TeamList />
+        <TeamContact />
       </div>
     </div>
   );

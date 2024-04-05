@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./style.module.css";
+import TeamMeetData from "../TeamMeetData";
 
 const TeamList = () => {
   return (
@@ -16,6 +17,9 @@ const TeamList = () => {
         <div className={`${styles.right}`}>
           <Link href={"/"}>Join our team</Link>
         </div>
+      </div>
+      <div className={`${styles.compDiv}`}>
+        <TeamMeetData />
       </div>
     </div>
   );
