@@ -13,6 +13,7 @@ const TeamSubscribe = () => {
             <div className={`${styles.right}`}>
               <input type="email" placeholder="your email address" />
               <button>Subscribe</button>
+              <img src="/TeamSubscribeImage/teamSubscribeBg.svg" alt="Image" />
             </div>
           </div>
         </div>
