@@ -1,52 +1,52 @@
-import Link from 'next/link';
-import styles from './style.module.css';
-import Image from 'next/image';
-
-async function fetchData() {
-  const url = await fetch("http://localhost:3000/api/HomeProccess");
+import Link from "next/link";
+import styles from "./style.module.css";
+import Image from "next/image";
+import { TiPlus } from "react-icons/ti";
+async function limitData() {
+  const url = await fetch("http://localhost:3000/api/HomeProccess?limit=3");
   const result = await url.json();
-  return result
+  return result;
 }
 
 async function HomeGallery() {
-  const card = await fetchData();
+  const limitCard = await limitData();
   return (
     <div className={`${styles.positionDiv}`}>
-      <div className={`${styles.absoluteDiv}`}>
+      <div className={`container ${styles.absoluteDiv}`}>
         <div className={`${styles.topDiv}`}>
           <p>Proccess</p>
           <div className={`${styles.flexTop}`}>
-            <div className={`${styles.topH2}`}>
-              <h2>Our client, global
-                analytical techno company,
-                wanted to build market.
-              </h2>
-            </div>
-            <div className={`${styles.topP}`}>
-              <Link href={'/'}>More Gallery</Link>
-            </div>
+            <h2>
+              Our client, global analytical techno company, wanted to build
+              market.
+            </h2>
+            <Link href={"/CaseStudy"}>More Gallery</Link>
           </div>
         </div>
         <div className={`${styles.bottomDiv}`}>
-          {
-            card.map(({ id, image }) => {
+          <div className={`${styles.limitFlex}`}>
+            {limitCard.map(({ id, image, name, description }) => {
               return (
-                <div className={`${styles.dataCard}`} key={id}>
-                  <Image
-                    style={{ borderRadius: "1rem" }}
-                    alt='Image'
-                    src={image}
-                    fill
-                  />
+                <div className={`${styles.limitCard}`} key={id}>
+                  <Image src={image} fill alt="Image" />
+                  <div className={`${styles.insetDiv}`}>
+                    <Link href={`/CaseStudy/${id}`}>
+                      <TiPlus />
+                    </Link>
+                    <p className={`${styles.limPTop}`}>{name}</p>
+                    <p className={`${styles.limPBottom}`}>{description}</p>
+                  </div>
                 </div>
-              )
-            })
-          }
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.responsiveButton}`}>
+          <Link href={"/CaseStudy"}>More Gallery</Link>
         </div>
       </div>
     </div>
-
-  )
+  );
 }
 
-export default HomeGallery
+export default HomeGallery;
