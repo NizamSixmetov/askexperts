@@ -2,6 +2,10 @@ import CaseStudyLivePreview from "@/app/Components/CaseStudyLivePreview";
 import styles from "./style.module.css";
 import Image from "next/image";
 import CaseStudyProject from "@/app/Components/CaseStudyProject";
+import CaseStudySingleStoryboard from "@/app/Components/CaseStudySingleStoryboard";
+import CaseStudyProjectResult from "@/app/Components/CaseStudyProjectResult";
+import TeamSubscribe from "@/app/Components/TeamSubscribe";
+import MoreCase from "@/app/Components/MoreCase";
 
 async function fetchData(id) {
   const url = await fetch("http://localhost:3000/api/HomeProccess/" + id);
@@ -18,7 +22,7 @@ const CaseStudySingle = async ({ params: { id } }) => {
           <div className="container">
             <div className={`${styles.containerDiv}`}>
               <p>Case Studies single</p>
-              <h4>Taxes & Efficiency</h4>
+              <h4>{data.name}</h4>
             </div>
           </div>
         </div>
@@ -43,6 +47,18 @@ const CaseStudySingle = async ({ params: { id } }) => {
           </div>
           <div style={{ marginTop: "7rem" }}>
             <CaseStudyProject data={data} />
+          </div>
+          <div>
+            <CaseStudySingleStoryboard data={data} />
+          </div>
+          <div>
+            <CaseStudyProjectResult data={data} />
+          </div>
+          <div>
+            <TeamSubscribe />
+          </div>
+          <div>
+            <MoreCase />
           </div>
         </div>
       </div>

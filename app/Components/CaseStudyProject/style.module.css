@@ -1,0 +1,85 @@
+.paddingDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 10rem;
+}
+
+.paddingDiv > h3 {
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #181818;
+}
+
+.paddingDiv > p,
+.ulDiv > ul > li {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #595566;
+}
+
+.ulDiv > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0px 0px 0px 15px;
+}
+
+.ulDiv > ul > li {
+  list-style: disc;
+}
+
+@media screen and (max-width: 992px) {
+  .paddingDiv {
+    padding: 0rem 3rem;
+  }
+
+  .paddingDiv > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .paddingDiv > p,
+  .ulDiv > ul > li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paddingDiv {
+    padding: 0rem 1rem;
+  }
+
+  .paddingDiv > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .paddingDiv > p,
+  .ulDiv > ul > li {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .paddingDiv {
+    padding: 0rem 0.5rem;
+  }
+
+  .paddingDiv > h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .paddingDiv > p,
+  .ulDiv > ul > li {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,72 @@
+.flexDiv {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top > h3 {
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #181818;
+}
+
+.bottom > a {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: #181818;
+  color: #ffffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  width: fit-content;
+  transition: 0.4s ease-in-out;
+}
+
+.bottom > a:hover {
+  color: #181818;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .top > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .bottom > a {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .bottom > a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top > h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .bottom > a {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0.5rem 1rem;
+  }
+}

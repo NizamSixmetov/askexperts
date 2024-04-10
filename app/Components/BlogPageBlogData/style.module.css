@@ -1,0 +1,229 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.newsCard {
+  width: 40%;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageDiv {
+  position: relative;
+  width: 410px;
+  height: 240px;
+  border-radius: 1rem;
+}
+
+.imageDiv > img {
+  border-radius: 1rem;
+}
+
+.cap > h3 {
+  font-family: Cabin;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #181818;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.description > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #595566;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.authorImage {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.authorImage > img {
+  border-radius: 50%;
+}
+
+.authorName > p {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #595566;
+}
+
+.authorLine {
+  border: 1px solid #595566;
+  height: 15px;
+}
+
+.authorDate > p {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #595566;
+}
+
+.authorLink > a {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #181818;
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  transition: 0.4s ease-in-out;
+}
+
+.authorLink > a:hover {
+  background-color: transparent;
+  color: #181818;
+}
+
+@media screen and (max-width: 1200px) {
+  .imageDiv {
+    width: 350px;
+    height: 200px;
+  }
+
+  .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .imageDiv {
+    width: 250px;
+    height: 150px;
+  }
+
+  .author {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .cap > h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .description > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .authorImage {
+    width: 35px;
+    height: 35px;
+  }
+
+  .authorName > p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .authorLine {
+    display: none;
+  }
+
+  .authorDate {
+    display: none;
+  }
+  .authorLink > a {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    gap: 2rem;
+  }
+
+  .imageDiv {
+    width: 210px;
+    height: 110px;
+  }
+
+  .author {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .cap > h3 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .description > p {
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+  }
+
+  .authorImage {
+    width: 35px;
+    height: 35px;
+  }
+
+  .authorName > p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .authorLink > a {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    flex-direction: column;
+  }
+  .newsCard {
+    width: 100%;
+  }
+
+  .imageDiv {
+    width: 300px;
+    height: 180px;
+  }
+
+  .authorLine {
+    display: block;
+  }
+
+  .authorDate {
+    display: block;
+  }
+}

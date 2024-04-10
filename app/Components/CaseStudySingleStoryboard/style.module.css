@@ -1,0 +1,92 @@
+.flexDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 10rem;
+}
+
+.flexDiv > h3 {
+  font-family: Cabin;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #1c1c1c;
+}
+
+.flexDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #595566;
+}
+
+.imageDiv {
+  position: relative;
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .flexDiv {
+    padding: 2rem 3rem;
+  }
+
+  .flexDiv > h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .flexDiv > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .imageDiv {
+    width: 550px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexDiv {
+    padding: 2rem 1rem;
+  }
+
+  .flexDiv > h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .flexDiv > p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .imageDiv {
+    width: 450px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flexDiv {
+    padding: 2rem 0.5rem;
+  }
+
+  .flexDiv > h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .flexDiv > p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .imageDiv {
+    width: 290px;
+    height: 150px;
+  }
+}
