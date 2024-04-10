@@ -1,0 +1,124 @@
+.bgDiv {
+  background-image: url("/CaseStudySingleImage/idBackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0;
+  background-position: center;
+}
+
+.marginDiv {
+  padding-top: 4.9rem;
+  background-color: #181818;
+}
+
+.containerDiv {
+  background-color: #ffffffd9;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: fit-content;
+}
+
+.containerDiv > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.145em;
+  color: #181818;
+  background-color: #ffcc4a;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.containerDiv > h4 {
+  font-family: Cabin;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #181818;
+  width: fit-content;
+}
+
+.ImageDiv {
+  position: relative;
+  width: 750px;
+  height: 300px;
+  margin: 0 auto;
+  /* border-radius: 1rem; */
+}
+
+.ImageDiv > img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .containerDiv > p {
+    font-size: 15px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 40px;
+  }
+
+  .ImageDiv {
+    width: 700px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .containerDiv > p {
+    font-size: 14px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 35px;
+  }
+
+  .ImageDiv {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerDiv > p {
+    font-size: 12px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 30px;
+  }
+
+  .containerDiv {
+    padding: 1rem;
+  }
+
+  .ImageDiv {
+    width: 320px;
+    height: 160px;
+  }
+}

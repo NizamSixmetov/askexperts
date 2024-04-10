@@ -1,0 +1,168 @@
+.bgDiv {
+  background-color: #181818;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.left > h5,
+.center > h5,
+.right > h5 {
+  font-family: Cabin;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.topFlex,
+.bottomFlex {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.left > p,
+.center > p,
+.right > p {
+  font-family: Cabin;
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bottomFlex > a {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  color: #181818;
+  background-color: #ffcc4a;
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  overflow: none;
+  cursor: pointer;
+}
+
+.bottomFlex > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv {
+    padding: 1.5rem;
+  }
+
+  .cardDiv {
+    gap: 3rem;
+  }
+
+  .topFlex,
+  .bottomFlex {
+    gap: 3rem;
+  }
+
+  .left,
+  .center,
+  .right {
+    gap: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgDiv {
+    padding: 1rem;
+  }
+
+  .cardDiv {
+    gap: 2rem;
+  }
+
+  .topFlex,
+  .bottomFlex {
+    gap: 2rem;
+  }
+
+  .left,
+  .center,
+  .right {
+    gap: 0.2rem;
+  }
+  .left > h5,
+  .center > h5,
+  .right > h5 {
+    font-size: 14px;
+  }
+
+  .left > p,
+  .center > p,
+  .right > p {
+    font-size: 10px;
+  }
+
+  .bottomFlex > a {
+    font-size: 15px;
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bgDiv {
+    padding: 1.5rem;
+  }
+
+  .cardDiv {
+    gap: 2rem;
+  }
+
+  .topFlex,
+  .bottomFlex {
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+  }
+
+  .left,
+  .center,
+  .right {
+    gap: 0.2rem;
+  }
+  .left > h5,
+  .center > h5,
+  .right > h5 {
+    font-size: 12px;
+  }
+
+  .left > p,
+  .center > p,
+  .right > p {
+    font-size: 9px;
+  }
+
+  .bottomFlex > a {
+    font-size: 10px;
+    padding: 0.7rem 0.5rem;
+    width: fit-content;
+    height: fit-content;
+  }
+}
