@@ -46,7 +46,7 @@ const BlogPageBlogData = async () => {
                     <p>{authorDate}</p>
                   </div>
                   <div className={`${styles.authorLink}`}>
-                    <Link href={"/"}>Read More</Link>
+                    <Link href={`/Blog/${id}`}>Read More</Link>
                   </div>
                 </div>
               </div>

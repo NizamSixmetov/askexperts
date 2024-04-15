@@ -8,6 +8,9 @@ export default [
     authorImage: "/BlogPageBlogDataImage/JohnCarterImage.svg",
     authorName: "John Carter",
     authorDate: "September 1, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
   {
     id: 2,
@@ -18,6 +21,9 @@ export default [
     authorImage: "/BlogPageBlogDataImage/NayraMelsonImage.svg",
     authorName: "Nayra Melson",
     authorDate: "September 2, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
   {
     id: 3,
@@ -28,6 +34,9 @@ export default [
     authorImage: "/BlogPageBlogDataImage/JohnCarterImage.svg",
     authorName: "John Carter",
     authorDate: "September 3, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
   {
     id: 4,
@@ -38,6 +47,9 @@ export default [
     authorImage: "/BlogPageBlogDataImage/NayraMelsonImage.svg",
     authorName: "Nayra Melson",
     authorDate: "September 4, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
   {
     id: 5,
@@ -48,6 +60,9 @@ export default [
     authorImage: "/BlogPageBlogDataImage/JohnCarterImage.svg",
     authorName: "John Carter",
     authorDate: "September 5, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
   {
     id: 6,
@@ -58,5 +73,8 @@ export default [
     authorImage: "/BlogPageBlogDataImage/NayraMelsonImage.svg",
     authorName: "Nayra Melson",
     authorDate: "September 6, 2022",
+    authorQuote:
+      "Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.",
+    position: "Senior Manager",
   },
 ];

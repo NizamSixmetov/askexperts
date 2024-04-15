@@ -1,0 +1,102 @@
+.bgDiv {
+  background-image: url("/BlogSinglePageImage/BlogSinglePageImagebg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0;
+  background-position: center;
+}
+
+.marginDiv {
+  padding-top: 4.9rem;
+  background-color: #181818;
+}
+
+.containerDiv {
+  background-color: #ffffffd9;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: fit-content;
+}
+
+.containerDiv > p {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  color: #181818;
+  background-color: #ffcc4a;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.containerDiv > h4 {
+  font-family: Cabin;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: #181818;
+  width: fit-content;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .containerDiv > p {
+    font-size: 14px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+
+  .containerDiv > p {
+    font-size: 13px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerDiv > p {
+    font-size: 11px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .containerDiv > h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .containerDiv {
+    padding: 1rem;
+  }
+}
