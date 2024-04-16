@@ -1,0 +1,170 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 15rem;
+}
+
+.right {
+  width: 60%;
+}
+
+.left > h3 {
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #181818;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right > h4 {
+  font-family: Cabin;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #181818;
+}
+
+.right > h4 > span {
+  font-family: Cabin;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #181818;
+}
+
+.right > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #595566;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    gap: 8.5rem;
+  }
+
+  .right {
+    width: 60%;
+  }
+
+  .left > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right > h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .right > h4 > span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .right > p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+    gap: 5.5rem;
+  }
+
+  .right {
+    width: 70%;
+  }
+
+  .left > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right > h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .right > h4 > span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .right > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .left > h3 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right > h4 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .right > h4 > span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .right > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./style.module.css";
 import { SlNotebook } from "react-icons/sl";
 
@@ -20,11 +21,11 @@ const Cap = () => {
               </p>
             </div>
             <div className={`${styles.bottom}`}>
-              <button className={`${styles.leftButton}`}>Our Services</button>
-              <button className={`${styles.rightButton}`} >
+              <Link href={'/Services'} className={`${styles.leftButton}`}>Our Services</Link>
+              <Link href={'/Contact'} className={`${styles.rightButton}`} >
                 <i><SlNotebook /></i>
                 <p>Book a Meeting</p>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

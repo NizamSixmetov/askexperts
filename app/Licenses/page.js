@@ -1,9 +1,26 @@
-import React from 'react'
+import LicensesFont from "../Components/LicensesFont";
+import LicensesIconGraphics from "../Components/LicensesIconGraphics";
+import LicensesPhotography from "../Components/LicensesPhotography";
+import PageCap from "../Components/PageCap";
+import TeamSubscribe from "../Components/TeamSubscribe";
+import styles from "./style.module.css";
 
 const Licenses = () => {
   return (
-    <div>Licenses</div>
-  )
-}
+    <div>
+      <div className={`${styles.marginDiv}`}>
+        <div className={`${styles.bgDiv}`}>
+          <div className="container">
+            <PageCap pElemnt={"Licenses"} h2Element={"All asset's Licenses"} />
+          </div>
+        </div>
+      </div>
+      <LicensesIconGraphics />
+      <LicensesPhotography />
+      <LicensesFont />
+      <TeamSubscribe />
+    </div>
+  );
+};
 
-export default Licenses
+export default Licenses;

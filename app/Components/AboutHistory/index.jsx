@@ -13,17 +13,17 @@ const AboutHistory = () => {
         </p>
         <div className={`${styles.mediaDiv}`}>
           <iframe
-            width="650"
-            height="250"
-            src="https://www.youtube.com/embed/QxpfRN5lfHg?si=C2u8Cy7HNCdWtecN"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/QxpfRN5lfHg?si=raVLkStiuYl1ZOIF"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
-          <img src="/AboutHistoryImage/rightBg.svg" alt="image" />
-          <div className={`${styles.mediaCube}`}></div>
+          <img src="/AboutHistoryImage/rightBg.svg" alt="Image" />
+          <div className={`${styles.cube}`}></div>
         </div>
       </div>
     </div>

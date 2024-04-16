@@ -1,0 +1,33 @@
+.bgDiv {
+  padding: 1rem 0;
+  background-color: #181818;
+}
+
+.marginDiv {
+  padding-top: 4.9rem;
+  background-color: #181818;
+}
+
+@media screen and (max-width: 992px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgDiv {
+    padding: 2rem 0;
+    background-position: center;
+  }
+
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+}

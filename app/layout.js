@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation/index";
 import Footer from "./Components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

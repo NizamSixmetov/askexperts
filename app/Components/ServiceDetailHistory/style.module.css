@@ -40,6 +40,7 @@
 .bottom {
   position: relative;
   z-index: 1;
+  width: 80%;
 }
 
 .bottom > img {
@@ -71,6 +72,10 @@
 }
 
 .bottom > iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: calc(0.56 * 40vw);
   border-radius: 1rem;
 }
 
@@ -79,11 +84,52 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  .bottom > img {
+    width: 25%;
+    top: -30px;
+    left: -30px;
+  }
+
+  .bottom > .topFrame {
+    top: -13px;
+    left: -13px;
+    padding: 2.5rem;
+  }
+
+  .bottom > .bottomFrame {
+    bottom: -10px;
+    right: -20px;
+    padding: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .center {
     width: 90%;
+  }
+
+  .bottom > img {
+    width: 25%;
+    top: -20px;
+    left: -20px;
+  }
+
+  .bottom > .topFrame {
+    top: -10px;
+    left: -10px;
+    padding: 2.5rem;
+  }
+
+  .bottom > .bottomFrame {
+    bottom: -10px;
+    right: -10px;
+    padding: 2.5rem;
+  }
+
+  .bottom > iframe {
+    width: 100%;
+    height: calc(0.56 * 60vw);
   }
 }
 
@@ -101,5 +147,28 @@
     font-size: 12px;
     line-height: 20px;
     padding: 0.1rem 0.3rem;
+  }
+
+  .bottom > img {
+    width: 28%;
+    top: -20px;
+    left: -20px;
+  }
+
+  .bottom > .topFrame {
+    top: -10px;
+    left: -10px;
+    padding: 2rem;
+  }
+
+  .bottom > .bottomFrame {
+    bottom: -10px;
+    right: -10px;
+    padding: 2rem;
+  }
+
+  .bottom > iframe {
+    width: 100%;
+    height: calc(0.56 * 65vw);
   }
 }

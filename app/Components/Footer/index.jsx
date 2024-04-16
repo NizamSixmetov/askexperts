@@ -1,8 +1,69 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./style.module.css";
 import { TbPointFilled } from "react-icons/tb";
+// import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Footer = () => {
+  // const goFAQ = () => {
+  //   useEffect(() => {
+  //     window.location.href = "/";
+
+  //     setTimeout(() => {
+  //       window.scrollTo(0, 100);
+  //     }, 100);
+  //   }, []);
+  // };
+
+  // const goFAQ = () => {
+  //   const router = useRouter();
+  //   router.push("/").then(() => {
+  //     window.scrollTo(0, 100);
+  //   });
+  // };
+
+  // const nextRouterMock = require("next-router-mock");
+
+  // jest.mock("next/navigation", () => {
+  //   const { useRouter } = nextRouterMock;
+
+  //   const usePathName = () => {
+  //     const router = useRouter();
+  //     return router.pathName;
+  //   };
+
+  //   const useSearchParams = () => {
+  //     const router = useRouter();
+  //     return new URLSearchParams(router.query)
+  //   }
+
+  //   return {
+  //     useRouter,
+  //     usePathName,
+  //     useSearchParams
+  //   }
+  // });
+
+  // const router = useRouter();
+
+  // function goFAQ() {
+  //   router.push("/");
+  //   setTimeout(() => {
+  //     window.scrollTo(0.100);
+  //   }, 0);
+  // }
+
+  // function goFAQ() {
+  //   useEffect(() => {
+  //     router.push("/");
+  //     setTimeout(() => {
+  //       window.scrollTo(0, 100);
+  //     }, 0);
+  //   }, []);
+  // }
+
   return (
     <div className={`${styles.bgDiv}`}>
       <div className="container">
@@ -45,7 +106,9 @@ const Footer = () => {
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={`/Services`}>FAQ</Link>
+                  <Link href={`/FAQ`}>
+                    FAQ
+                  </Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>

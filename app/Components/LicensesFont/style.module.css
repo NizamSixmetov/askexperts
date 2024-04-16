@@ -1,0 +1,79 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 24rem;
+}
+
+.right {
+  width: 100%;
+}
+
+.left > h3 {
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #181818;
+}
+
+.right > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #595566;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    padding: 3rem 1rem;
+    gap: 16rem;
+  }
+
+  .left > h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .right > p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    padding: 3rem 0rem;
+    gap: 12rem;
+  }
+
+  .left > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .right > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0.5rem;
+  }
+
+  .left > h3 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .right > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
