@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import styles from './style.module.css';
-import { Autoplay } from 'swiper/modules'
+import styles from "./style.module.css";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -13,7 +13,7 @@ const HomePartner = () => {
         slidesPerView={5}
         className="mySwiper"
         autoplay={{
-          delay: 1500,
+          delay: 1000,
         }}
         loop={true}
         modules={[Autoplay]}
@@ -25,7 +25,11 @@ const HomePartner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img className={`${styles.imgDiv}`} src="/Homepartner/2.svg" alt="Image" />
+            <img
+              className={`${styles.imgDiv}`}
+              src="/Homepartner/2.svg"
+              alt="Image"
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -40,7 +44,7 @@ const HomePartner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/Homepartner/5.svg" alt='Image' />
+            <img src="/Homepartner/5.svg" alt="Image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -50,7 +54,7 @@ const HomePartner = () => {
         </SwiperSlide>
       </Swiper>
     </div>
-  )
+  );
 };
 
 export default HomePartner;

@@ -5,27 +5,70 @@ import { IoTimeOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import handlePhoneClick from "../goPhone/goPhone";
 import LocationLink from "../goLocation/LocationLink";
-import { toast } from "react-toastify";
-// import { Alert } from "@mui/material";
-// import Stack from "@mui/material/Stack";
+import toast, { Toaster } from "react-hot-toast";
+import { FaCircleCheck } from "react-icons/fa6";
+import { useState } from "react";
+import { MdOutlineError } from "react-icons/md";
+
+const notify = () => {
+  toast("Melumat gonderildi", {
+    duration: 2000,
+    position: "bottom-right",
+    style: { color: "green", fontSize: "20px" },
+    icon: <FaCircleCheck />,
+  });
+};
+
+const ErrorNotify = () => {
+  toast("Bos qalan xanalari doldurun", {
+    duration: 2000,
+    position: "bottom-right",
+    style: { color: "red", fontSize: "20px" },
+    icon: <MdOutlineError />,
+  });
+};
 
 const HomeContact = () => {
-  const alertToast = () => {
-    toast.success("Halal Olsun Emioglu"),
-      {
-        position: "top-left",
-      };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+
+  const checkInput = () => {
+    if (
+      name.trim() === "" ||
+      email.trim() === "" ||
+      phone.trim() === "" ||
+      message.trim() === "" ||
+      company.trim() === ""
+    ) {
+      ErrorNotify();
+
+      return;
+    }
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+    setCompany("");
+
+    checkFullInput();
   };
 
-  // function OKInput() {
-  //   alert("OK")
-  //   console.log("OK");
-  //   return (
-  //     <Stack>
-  //       <Alert severity="success">This is a success Alert.</Alert>;
-  //     </Stack>
-  //   );
-  // }
+  function checkFullInput() {
+    if (
+      name.trim() !== "" ||
+      email.trim() !== "" ||
+      phone.trim() !== "" ||
+      message.trim() !== "" ||
+      company.trim() !== ""
+    ) {
+      notify();
+    }
+  }
+
   return (
     <div className="container">
       <div className={`${styles.flexBase}`}>
@@ -82,17 +125,31 @@ const HomeContact = () => {
             <div className={`${styles.firstInput}`}>
               <div className={`${styles.fullName}`}>
                 <p>Full Name</p>
-                <input type="text" placeholder="john david" required />
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="john david"
+                  required
+                />
               </div>
               <div className={`${styles.fullName}`}>
                 <p>Email</p>
-                <input type="email" placeholder="consult@mail.com" required />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="consult@mail.com"
+                  required
+                />
               </div>
             </div>
             <div className={`${styles.firstInput}`}>
               <div className={`${styles.fullName}`}>
                 <p>Phone</p>
                 <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   type="number"
                   pattern="^\+7[1-9]{10}$"
                   required
@@ -103,19 +160,30 @@ const HomeContact = () => {
               </div>
               <div className={`${styles.fullName}`}>
                 <p>Company(optional)</p>
-                <input type="text" placeholder="yourcompany.com" required />
+                <input
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  type="text"
+                  placeholder="yourcompany.com"
+                  required
+                />
               </div>
             </div>
             <div className={`${styles.messageInput}`}>
               <p>Message</p>
               <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 cols="30"
                 rows="10"
                 placeholder="Briefly tell us about your project and your current goals. How can we help you?"
                 required
               ></textarea>
             </div>
-            <button onClick={alertToast}>Send Message</button>
+            <button type="button" onClick={() => checkInput()}>
+              Send Message
+            </button>
+            <Toaster />
           </form>
         </div>
       </div>
