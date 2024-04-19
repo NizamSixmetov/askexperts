@@ -9,6 +9,11 @@
   gap: 2rem;
 }
 
+.flexDiv:hover .one {
+  background-color: #4eaf4e;
+  color: #f6f6f6;
+}
+
 .left {
   width: 100%;
   display: flex;
@@ -36,6 +41,7 @@
   color: #181818;
   width: fit-content;
   padding: 0.3rem 1rem;
+  transition: 0.4s ease-in-out;
 }
 
 .left > .twoP {
@@ -212,7 +218,7 @@
   }
 
   .starDiv {
-    gap: .5rem;
+    gap: 0.5rem;
     align-items: center;
     text-align: center;
     padding: 0 1.5rem;

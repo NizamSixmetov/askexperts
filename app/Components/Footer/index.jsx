@@ -1,69 +1,9 @@
-"use client";
-
 import Link from "next/link";
 import styles from "./style.module.css";
 import { TbPointFilled } from "react-icons/tb";
-// import { useRouter } from "next/router";
-import { useEffect } from "react";
+import LocationLinkFooter from "../goLocationFooter/LocationLinkFooter";
 
 const Footer = () => {
-  // const goFAQ = () => {
-  //   useEffect(() => {
-  //     window.location.href = "/";
-
-  //     setTimeout(() => {
-  //       window.scrollTo(0, 100);
-  //     }, 100);
-  //   }, []);
-  // };
-
-  // const goFAQ = () => {
-  //   const router = useRouter();
-  //   router.push("/").then(() => {
-  //     window.scrollTo(0, 100);
-  //   });
-  // };
-
-  // const nextRouterMock = require("next-router-mock");
-
-  // jest.mock("next/navigation", () => {
-  //   const { useRouter } = nextRouterMock;
-
-  //   const usePathName = () => {
-  //     const router = useRouter();
-  //     return router.pathName;
-  //   };
-
-  //   const useSearchParams = () => {
-  //     const router = useRouter();
-  //     return new URLSearchParams(router.query)
-  //   }
-
-  //   return {
-  //     useRouter,
-  //     usePathName,
-  //     useSearchParams
-  //   }
-  // });
-
-  // const router = useRouter();
-
-  // function goFAQ() {
-  //   router.push("/");
-  //   setTimeout(() => {
-  //     window.scrollTo(0.100);
-  //   }, 0);
-  // }
-
-  // function goFAQ() {
-  //   useEffect(() => {
-  //     router.push("/");
-  //     setTimeout(() => {
-  //       window.scrollTo(0, 100);
-  //     }, 0);
-  //   }, []);
-  // }
-
   return (
     <div className={`${styles.bgDiv}`}>
       <div className="container">
@@ -106,27 +46,25 @@ const Footer = () => {
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={`/FAQ`}>
-                    FAQ
-                  </Link>
+                  <Link href={`/FAQ`}>FAQ</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/"}>Single Service</Link>
+                  <Link href={"/error"}>Single Service</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/"}>Get Quote</Link>
+                  <Link href={"/Quote"}>Get Quote</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Services"}>Prices</Link>
+                  <Link href={"/Pricing"}>Prices</Link>
                 </li>
               </ul>
             </div>
@@ -139,25 +77,25 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/"}> About</Link>
+                    <Link href={"/About"}> About</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/"}>News</Link>
+                    <Link href={"/Blog"}>News</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/"}>Contacts</Link>
+                    <Link href={"/Contact"}>Contacts</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/"}>Testimonials</Link>
+                    <Link href={"/?"}>Testimonials</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
@@ -169,7 +107,7 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/"}>Our approach</Link>
+                    <Link href={"/?"}>Our approach</Link>
                   </li>
                 </ul>
               </div>
@@ -178,8 +116,8 @@ const Footer = () => {
               <div className={`${styles.left}`}>
                 <h4>Address</h4>
                 <div className={`${styles.bottomLineAddress}`}></div>
-                <p>1700 W Blancke St, kiyev port south USA, America</p>
-                <button>Book an Appoinment</button>
+                <div className={`${styles.compStyle}`}><LocationLinkFooter /></div>
+                <Link href={"/Contact"}>Book an Appoinment</Link>
               </div>
             </div>
           </div>

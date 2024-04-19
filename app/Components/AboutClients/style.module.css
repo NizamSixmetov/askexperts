@@ -6,7 +6,11 @@
 .firstDiv {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
+}
+
+.firstDiv:hover .firstP {
+  background-color: #4eaf4e;
 }
 
 .firstP {
@@ -20,6 +24,7 @@
   background-color: #ffcc4a;
   border-radius: 2rem;
   width: fit-content;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv {

@@ -1,0 +1,22 @@
+.paddingDiv {
+  padding: 2rem 0;
+}
+
+.marginDiv {
+  padding-top: 4.9rem;
+  background-color: #181818;
+}
+
+@media screen and (max-width: 992px) {
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marginDiv {
+    padding-top: 4.5rem;
+    background-color: #181818;
+  }
+}

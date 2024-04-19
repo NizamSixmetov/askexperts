@@ -7,6 +7,15 @@
   border-radius: 1rem;
 }
 
+.bg:hover .oneP {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
+.bg:hover .text > h2 > span {
+  color: #fff;
+}
+
 .left {
   width: 100%;
   display: flex;
@@ -31,6 +40,7 @@
   width: fit-content;
   padding: 0.2rem 0.7rem;
   border-radius: 1rem;
+  transition: 0.4s ease-in-out;
 }
 
 .text > h2 {
@@ -43,6 +53,7 @@
 
 .text > h2 > span {
   color: #727272;
+  transition: 0.4s ease-in-out;
 }
 
 .twoP {

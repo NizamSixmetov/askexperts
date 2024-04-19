@@ -11,7 +11,7 @@ import { useState } from "react";
 import { MdOutlineError } from "react-icons/md";
 
 const notify = () => {
-  toast("Melumat gonderildi", {
+  toast("Information sent", {
     duration: 2000,
     position: "bottom-right",
     style: { color: "green", fontSize: "20px" },
@@ -20,7 +20,7 @@ const notify = () => {
 };
 
 const ErrorNotify = () => {
-  toast("Bos qalan xanalari doldurun", {
+  toast("Fill in the blank cells", {
     duration: 2000,
     position: "bottom-right",
     style: { color: "red", fontSize: "20px" },

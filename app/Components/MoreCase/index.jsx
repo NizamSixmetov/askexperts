@@ -13,7 +13,7 @@ const MoreCase = () => {
           <MoreCaseData />
         </div>
         <div className={`${styles.bottom}`}>
-          <Link href={"/"}>Browse all case studies</Link>
+          <Link href={"/CaseStudy"}>Browse all case studies</Link>
         </div>
       </div>
     </div>

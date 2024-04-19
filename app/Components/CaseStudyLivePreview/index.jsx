@@ -22,7 +22,9 @@ const CaseStudyLivePreview = async ({ data }) => {
                 <h5>Date</h5>
                 <p>{data.date}</p>
               </div>
-              <Link href={"/"}>Live Preview</Link>
+              <a target="_blank" href={data.preview}>
+                Live Preview
+              </a>
             </div>
           </div>
         </div>

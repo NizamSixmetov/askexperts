@@ -41,6 +41,13 @@
   padding: 0.2rem 0.5rem;
 }
 
+.image > a {
+  position: absolute;
+  background-color: transparent;
+  inset: 0;
+  border-radius: 1rem;
+}
+
 .cardDiv:hover {
   &.cardDiv > .image > p {
     background-color: #ffcc4a;

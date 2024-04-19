@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.flexTop:hover .topLeft > p {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
 .topLeft {
   width: 100%;
 }
@@ -25,6 +30,7 @@
   border-radius: 1rem;
   width: fit-content;
   padding: 0.2rem 0.7rem;
+  transition: 0.4s ease-in-out;
 }
 
 .topLeft > h3 {
@@ -47,6 +53,7 @@
   border-radius: 1rem;
   padding: 0.7rem 1rem;
   transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .topRight > a:hover {

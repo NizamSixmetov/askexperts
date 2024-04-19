@@ -5,6 +5,15 @@
   justify-content: center;
 }
 
+.flexDiv:hover .left > .squareDiv {
+  background-color: #ffcc4a;
+}
+
+.flexDiv:hover .right > .cap {
+  background-color: #4eaf4e;
+  color: white;
+}
+
 .flexDiv > .left {
   position: relative;
   width: 100%;
@@ -39,6 +48,7 @@
   left: -20px;
   border-radius: 1rem;
   z-index: -1;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv > .right > .cap {
@@ -51,6 +61,7 @@
   background-color: #ffcc4a;
   padding: 0.1rem 1rem;
   width: fit-content;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv > .right > h3 {

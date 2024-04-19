@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import styles from './style.module.css';
-import { Navigation } from 'swiper/modules'
+import styles from "./style.module.css";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function ClientCouruselHome() {
   return (
@@ -20,28 +20,28 @@ function ClientCouruselHome() {
       >
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt='Image' />
+            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
             <p className={`${styles.nameP}`}>Kathleen Smith</p>
             <p className={`${styles.jobP}`}>Web Designer</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt='Image' />
+            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
             <p className={`${styles.nameP}`}>Simitci Qaqash</p>
             <p className={`${styles.jobP}`}>Copleden</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt='Image' />
+            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
             <p className={`${styles.nameP}`}>Bulent Ersoy</p>
             <p className={`${styles.jobP}`}>Rengsaz</p>
           </div>
         </SwiperSlide>
       </Swiper>
     </div>
-  )
+  );
 }
 
-export default ClientCouruselHome
+export default ClientCouruselHome;

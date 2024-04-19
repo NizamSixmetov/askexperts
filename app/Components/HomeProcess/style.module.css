@@ -6,6 +6,16 @@
   justify-content: center;
 }
 
+.flex:hover .processP {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
+.flex:hover .rightP {
+  background-color: #4eaf4e;
+  color: #eaeaea;
+}
+
 .leftDiv {
   display: flex;
   flex-direction: column;
@@ -30,6 +40,7 @@
   padding: 0.1rem 0.5rem;
   border-radius: 1rem;
   width: fit-content;
+  transition: 0.4s ease-in-out;
 }
 
 .leftH2 {
@@ -127,6 +138,7 @@
   border: none;
   border-radius: 1rem;
   padding: 0.1rem 0.5rem;
+  transition: 0.4s ease-in-out;
 }
 
 .rightDiv > h2 {

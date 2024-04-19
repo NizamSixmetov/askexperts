@@ -10,6 +10,11 @@
   );
 }
 
+.positionDiv:hover .topDiv > p {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
 .absoluteDiv {
   display: flex;
   flex-direction: column;
@@ -34,6 +39,7 @@
   padding: 0rem 0.5rem;
   border-radius: 1rem;
   margin: 0 auto;
+  transition: 0.4s ease-in-out;
 }
 
 .flexTop {

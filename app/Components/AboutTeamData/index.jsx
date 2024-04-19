@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./style.module.css";
 import AboutTeamSocialData from "../AboutTeamSocialData";
+import Link from "next/link";
 
 async function fetchData() {
   const url = await fetch("http://localhost:3000/api/teamData");
@@ -29,6 +30,7 @@ async function AboutTeamData() {
                 <div className={`${styles.image}`}>
                   <Image src={image} fill alt="image" />
                   <p>{position}</p>
+                  <Link href={`/Team/${id}`}></Link>
                 </div>
                 <h4>{name}</h4>
                 <p>{description}</p>

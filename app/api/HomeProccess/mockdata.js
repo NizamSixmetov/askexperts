@@ -4,6 +4,7 @@ export default [
     image: "/HomeProccess/photo1.svg",
     name: "Taxes & Efficiency",
     description: "Business",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th September 2022",
     overviewCap:
@@ -31,6 +32,8 @@ export default [
     image: "/HomeProccess/photo2.svg",
     name: "Planning Guide",
     description: "Hobbies",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
+
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th December 2022",
     overviewCap:
@@ -58,6 +61,8 @@ export default [
     image: "/HomeProccess/photo3.svg",
     name: "Investment banking",
     description: "Business",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
+
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th December 2022",
     overviewCap:
@@ -85,6 +90,8 @@ export default [
     image: "/HomeProccess/photo4.svg",
     name: "Financial Plan",
     description: "Study",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
+
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th July 2022",
     overviewCap:
@@ -112,6 +119,8 @@ export default [
     image: "/HomeProccess/photo5.svg",
     name: "Audit & Evaluation",
     description: "Business",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
+
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th August 2022",
     overviewCap:
@@ -139,6 +148,8 @@ export default [
     image: "/HomeProccess/photo6.svg",
     name: "Thematic Study",
     description: "Hobbies",
+    preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
+
     fullImage: "/CaseStudySingleImage/fullImage.svg",
     date: "27th June 2022",
     overviewCap:

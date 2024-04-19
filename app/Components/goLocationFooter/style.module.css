@@ -1,0 +1,9 @@
+.pElement {
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  width: fit-content;
+}
+
+.pElement:hover {
+  color: #ffcc4a;
+}

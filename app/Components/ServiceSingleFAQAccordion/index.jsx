@@ -21,7 +21,9 @@ const ServiceSingleFAQAccordion = () => {
         slots={{ transition: Fade }}
         slotProps={{ transition: { timeout: 100 } }}
         sx={{
-          "& .MuiAccordion-region": { height: expanded ? "auto" : 0 },
+          "& .MuiAccordion-region": {
+            height: expanded ? "auto" : 0,
+          },
           "& .MuiAccordionDetails-root": {
             display: expanded ? "block" : "none",
           },
@@ -33,12 +35,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel1-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
             What will happen when I’ve sent my application?
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.
@@ -52,10 +60,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel2-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>Can I get a free trial before I purchase?</Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
+            Can I get a free trial before I purchase?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.
@@ -69,12 +85,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel3-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
             What should I include in my personal statement?
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.
@@ -88,12 +110,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel4-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
             Will membership plans be charged automatically?
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.
@@ -107,12 +135,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel5-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
             What will happen when I’ve sent my application?
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.
@@ -126,10 +160,18 @@ const ServiceSingleFAQAccordion = () => {
           id="panel6-header"
           style={{ fontSize: "30px", backgroundColor: "#F5F5F5" }}
         >
-          <Typography>Can I get a free trial before I purchase?</Typography>
+          <Typography style={{ color: "#181818", fontWeight: "600" }}>
+            Can I get a free trial before I purchase?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#F5F5F5" }}>
-          <Typography sx={{ backgroundColor: "#F5F5F5" }}>
+          <Typography
+            style={{
+              backgroundColor: "#F5F5F5",
+              color: "#595566",
+              fontWeight: "400",
+            }}
+          >
             Ippsum is the result of synergy between our teams and our customers.
             Our company culture is focused on excellent productivity, customer
             satisfaction, respect for team and individual achievements.

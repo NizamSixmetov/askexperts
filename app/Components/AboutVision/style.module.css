@@ -2,6 +2,11 @@
   padding: 2rem 0;
 }
 
+.paddingDiv:hover .firstP {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
 .firstP {
   font-family: Lato;
   font-size: 16px;
@@ -13,6 +18,7 @@
   padding: 0 0.5rem;
   color: white;
   margin: 1rem 0;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv {
@@ -84,6 +90,10 @@
   position: relative;
 }
 
+.paddingDiv:hover .index2 {
+  background-color: #ffcc4a;
+}
+
 .rightDiv > .index1 {
   position: absolute;
   z-index: -1;
@@ -99,6 +109,7 @@
   padding: 4rem 4rem;
   border-radius: 1rem;
   z-index: -1;
+  transition: 0.3s ease-in-out;
 }
 
 .rightDiv > .index3 {

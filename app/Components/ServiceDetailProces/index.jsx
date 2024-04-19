@@ -1,7 +1,11 @@
+"use client"
+
 import styles from "./style.module.css";
 import { FiPhone } from "react-icons/fi";
 import { IoTimeOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
+import LocationLink from "../goLocation/LocationLink";
+import handlePhoneClick from "../goPhone/goPhone";
 
 const ServiceDetailProces = () => {
   return (
@@ -26,7 +30,7 @@ const ServiceDetailProces = () => {
                   </div>
                   <div className={`${styles.text}`}>
                     <p>Call Today</p>
-                    <p>+1 800 100 900</p>
+                    <p onClick={() => handlePhoneClick("+1 800 100 900")}>+1 800 100 900</p>
                   </div>
                 </div>
                 <div className={`${styles.flexIcon}`}>
@@ -48,7 +52,9 @@ const ServiceDetailProces = () => {
                   </div>
                   <div className={`${styles.text}`}>
                     <p>USA Office</p>
-                    <p>195 Devonshire St Boston, MA 02110</p>
+                    <div className={`${styles.location}`}>
+                      <LocationLink />
+                    </div>
                   </div>
                 </div>
               </div>

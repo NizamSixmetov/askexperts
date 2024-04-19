@@ -8,6 +8,10 @@
   padding: 3rem 0;
 }
 
+.flexDiv:hover .topP {
+  background-color: #ffcc4a;
+}
+
 .flexDiv > .topP {
   font-family: Lato;
   font-size: 16px;
@@ -19,6 +23,7 @@
   border-radius: 2rem;
   width: fit-content;
   background-color: #4eaf4e;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv > h3 {
@@ -45,6 +50,10 @@
   margin-top: 1.5rem;
 }
 
+.mediaDiv:hover .cube {
+  background-color: #ffcc4a;
+}
+
 .mediaDiv > .cube {
   background-color: #4eaf4e;
   padding: 5rem;
@@ -54,6 +63,7 @@
   bottom: -20px;
   left: 90px;
   z-index: -1;
+  transition: 0.4s ease-in-out;
 }
 
 .mediaDiv > img {

@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 const ServicesPricing = () => {
   return (
     <div className={`${styles.flexDiv}`}>
-      <p>Pricing</p>
+      <p className={`${styles.pricing}`}>Pricing</p>
       <h3>Our Pricing Plan</h3>
       <ServicesPricingData />
     </div>

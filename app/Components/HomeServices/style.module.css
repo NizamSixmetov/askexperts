@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.bgDiv:hover .top > p {
+  background-color: #ffcc4a;
+}
+
 .top {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,7 @@
   border-radius: 20px;
   background-color: #4eaf4e;
   width: fit-content;
+  transition: 0.4s ease-in-out;
 }
 
 .top > h2 {
@@ -50,7 +55,7 @@
 @media screen and (max-width: 576px) {
   .top > p {
     font-size: 12px;
-    padding: 0.1rem .5rem;
+    padding: 0.1rem 0.5rem;
   }
 
   .top > h2 {

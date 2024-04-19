@@ -6,6 +6,15 @@
   margin: 0 auto;
 }
 
+.bgDiv:hover .left > h5,
+.bgDiv:hover .left > p,
+.bgDiv:hover .center > h5,
+.bgDiv:hover .center > p,
+.bgDiv:hover .right > h5,
+.bgDiv:hover .right > p {
+  color: #ffcc4a;
+}
+
 .cardDiv {
   display: flex;
   justify-content: center;
@@ -28,6 +37,7 @@
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
+  transition: 0.4s ease-in-out;
 }
 
 .topFlex,
@@ -44,6 +54,7 @@
   font-size: 11px;
   font-weight: 400;
   color: #ffffff;
+  transition: 0.4s ease-in-out;
 }
 
 .bottomFlex > a {

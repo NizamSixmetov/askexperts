@@ -3,6 +3,19 @@
   padding: 3rem 0;
 }
 
+.bgDiv:hover .top > p {
+  background-color: #ffcc4a;
+  color: #181818;
+}
+
+.bgDiv:hover .topFrame {
+  background-color: #ffcc4a;
+}
+
+.bgDiv:hover .bottomFrame {
+  background-color: #4eaf4e;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -23,6 +36,7 @@
   border-radius: 1rem;
   width: fit-content;
   padding: 0.1rem 0.5rem;
+  transition: 0.4s ease-in-out;
 }
 
 .center {
@@ -59,6 +73,7 @@
   padding: 3rem;
   background-color: #4eaf4e;
   border-radius: 1rem;
+  transition: 0.4s ease-in-out;
 }
 
 .bottom > .bottomFrame {
@@ -69,6 +84,7 @@
   padding: 3rem;
   background-color: #ffcc4a;
   border-radius: 1rem;
+  transition: 0.4s ease-in-out;
 }
 
 .bottom > iframe {

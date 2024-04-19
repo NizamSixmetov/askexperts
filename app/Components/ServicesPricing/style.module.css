@@ -7,6 +7,11 @@
   background-color: #f5f5f5;
 }
 
+.flexDiv:hover .pricing {
+  background-color: #ffcc4a;
+  color: #ffffffff;
+}
+
 .flexDiv > p {
   font-family: Lato;
   font-size: 16px;
@@ -19,6 +24,7 @@
   width: fit-content;
   border-radius: 2rem;
   padding: 0.2rem 0.5rem;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv > h3 {

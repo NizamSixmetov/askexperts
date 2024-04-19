@@ -3,6 +3,10 @@
   padding: 3rem 0;
 }
 
+.bgDiv:hover .topP {
+  background-color: #4eaf4e;
+}
+
 .flexDiv {
   display: flex;
   flex-direction: column;
@@ -22,6 +26,7 @@
   color: #181818;
   width: fit-content;
   border-radius: 2rem;
+  transition: 0.4s ease-in-out;
 }
 
 .flexDiv > h3 {
