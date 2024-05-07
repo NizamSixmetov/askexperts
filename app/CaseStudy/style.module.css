@@ -54,6 +54,14 @@
   color: #ffcc4a;
 }
 
+.topFilter > .topActive {
+  color: #ffcc4a;
+}
+
+.bottomFilter > .bottomActive {
+  color: #ffcc4a;
+}
+
 .allCase {
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +71,7 @@
   padding: 0.5rem 0.5rem;
   background-color: #f5f5f5;
   border-radius: 1rem;
+  max-width: fit-content;
 }
 
 .cardDiv {

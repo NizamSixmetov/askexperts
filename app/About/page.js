@@ -8,6 +8,14 @@ import AboutHistory from "../Components/AboutHistory";
 import AboutTeam from "../Components/AboutTeam";
 import HomeBookNow from "../Components/HomeBookNow";
 
+export const metadata = {
+  title: "About",
+  description: "About Page",
+  icons: {
+    icon: "/metadataIcon/about.svg",
+  },
+};
+
 const About = () => {
   return (
     <div>
@@ -26,7 +34,7 @@ const About = () => {
       <AboutClients />
       <AboutHistory />
       <AboutTeam />
-      <div style={{padding:"4rem 0"}}>
+      <div style={{ padding: "4rem 0" }}>
         <HomeBookNow />
       </div>
     </div>

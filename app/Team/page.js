@@ -4,6 +4,11 @@ import PageCap from "../Components/PageCap";
 import TeamList from "../Components/TeamList";
 import TeamContact from "../Components/TeamContact";
 
+export const metadata = {
+  title: "Team",
+  description: "Team page",
+};
+
 const Team = () => {
   return (
     <div>

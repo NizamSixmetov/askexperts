@@ -7,6 +7,14 @@ async function fetchData(id) {
   return result;
 }
 
+export const metadata = {
+  title: "Blog",
+  description: "Blog Single page",
+  icons: {
+    icon: "/metadataIcon/blogSingle.svg",
+  },
+};
+
 const BlogSinglePage = async ({ params: { id } }) => {
   const data = await fetchData(id);
   return (

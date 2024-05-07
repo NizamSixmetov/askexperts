@@ -1,6 +1,11 @@
 import styles from "./styles.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Not Found",
+  description: "404 page",
+};
+
 export default function NotFound() {
   return (
     <div>

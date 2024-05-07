@@ -2,6 +2,11 @@ import PageCap from "../Components/PageCap";
 import ServicesPricingData from "../Components/ServicesPricingData";
 import styles from "./style.module.css";
 
+export const metadata = {
+  title: "Pricing",
+  description: "Pricing page",
+};
+
 const Pricing = () => {
   return (
     <div>

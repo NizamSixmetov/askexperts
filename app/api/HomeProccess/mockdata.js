@@ -1,6 +1,7 @@
 export default [
   {
     id: 1,
+    category: "Taxes&Efficiency",
     image: "/HomeProccess/photo1.svg",
     name: "Taxes & Efficiency",
     description: "Business",
@@ -29,6 +30,7 @@ export default [
   },
   {
     id: 2,
+    category: "Taxes&Efficiency",
     image: "/HomeProccess/photo2.svg",
     name: "Planning Guide",
     description: "Hobbies",
@@ -58,6 +60,7 @@ export default [
   },
   {
     id: 3,
+    category: "InvestmentBanking",
     image: "/HomeProccess/photo3.svg",
     name: "Investment banking",
     description: "Business",
@@ -87,6 +90,7 @@ export default [
   },
   {
     id: 4,
+    category: "FinancialPlan",
     image: "/HomeProccess/photo4.svg",
     name: "Financial Plan",
     description: "Study",
@@ -116,6 +120,7 @@ export default [
   },
   {
     id: 5,
+    category: "FinancialPlan",
     image: "/HomeProccess/photo5.svg",
     name: "Audit & Evaluation",
     description: "Business",
@@ -145,6 +150,7 @@ export default [
   },
   {
     id: 6,
+    category: "InvestmentBanking",
     image: "/HomeProccess/photo6.svg",
     name: "Thematic Study",
     description: "Hobbies",

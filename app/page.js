@@ -10,6 +10,16 @@ import HomeProcess from "./Components/HomeProcess";
 import HomeServices from "./Components/HomeServices";
 import ProjectNumber from "./Components/ProjectNumber";
 
+export const metadata = {
+  title: {
+    absolute: "AskExperts",
+  },
+  description: "Home page",
+  icons: {
+    icon: "/metadataIcon/Home.svg",
+  },
+};
+
 export default function Home() {
   return (
     <div>

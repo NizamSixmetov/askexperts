@@ -5,6 +5,11 @@ import PageCap from "../Components/PageCap";
 import TeamSubscribe from "../Components/TeamSubscribe";
 import styles from "./style.module.css";
 
+export const metadata = {
+  title: "Licenses",
+  description: "Licenses page",
+};
+
 const Licenses = () => {
   return (
     <div>

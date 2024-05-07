@@ -5,6 +5,11 @@ import ContactLetsTalk from "../Components/ContactLetsTalk";
 import TeamSubscribe from "../Components/TeamSubscribe";
 import HomeContact from "../Components/HomeContact";
 
+export const metadata = {
+  title: "Contact",
+  description: "Contact page",
+};
+
 const Contact = () => {
   return (
     <div>

@@ -2,6 +2,11 @@ import PageCap from "../Components/PageCap";
 import ServiceSingleFAQ from "../Components/ServiceSingleFAQ";
 import styles from "./style.module.css";
 
+export const metadata = {
+  title: "FAQ",
+  description: "FAQ page",
+};
+
 const FAQ = () => {
   return (
     <div>

@@ -21,9 +21,7 @@ async function AboutTeamData() {
             name,
             description,
             position,
-            instagram,
-            facebook,
-            twitter,
+
           }) => {
             return (
               <div className={`${styles.cardDiv}`} key={id}>

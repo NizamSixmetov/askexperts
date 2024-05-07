@@ -2,6 +2,11 @@ import PageCap from "../Components/PageCap";
 import QuoteSingle from "../Components/QuoteSingle";
 import styles from "./style.module.css";
 
+export const metadata = {
+  title: "Quote",
+  description: "Quote page",
+};
+
 const Quote = () => {
   return (
     <div>
