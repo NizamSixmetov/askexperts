@@ -15,7 +15,7 @@ const TeamList = () => {
           </p>
         </div>
         <div className={`${styles.right}`}>
-          <Link href={"/"}>Join our team</Link>
+          <Link href={"/Contacts"}>Join our team</Link>
         </div>
       </div>
       <div className={`${styles.compDiv}`}>

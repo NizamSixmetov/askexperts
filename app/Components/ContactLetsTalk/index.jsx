@@ -1,3 +1,7 @@
+"use client";
+import handlePhoneClick from "../goPhone/goPhone";
+import LocationLink from "../goLocation/LocationLink";
+import goEmail from "../goEmail";
 import styles from "./style.module.css";
 import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -33,7 +37,10 @@ const ContactLetsTalk = () => {
                 <FaPhoneAlt />
               </i>
             </div>
-            <div className={`${styles.rightInfo}`}>
+            <div
+              onClick={() => handlePhoneClick("+01 238 543 987")}
+              className={`${styles.rightInfo}`}
+            >
               <p className={`${styles.left1}`}>Have Any Question?</p>
               <p className={`${styles.right1}`}>Free +01 238 543 987</p>
             </div>
@@ -44,7 +51,10 @@ const ContactLetsTalk = () => {
                 <CiMail />
               </i>
             </div>
-            <div className={`${styles.rightInfo}`}>
+            <div
+              onClick={() => goEmail("Info@consultalk.com")}
+              className={`${styles.rightInfo}`}
+            >
               <p className={`${styles.left1}`}>Write Email</p>
               <p className={`${styles.right1}`}>Info@consultalk.com</p>
             </div>
@@ -57,9 +67,9 @@ const ContactLetsTalk = () => {
             </div>
             <div className={`${styles.rightInfo}`}>
               <p className={`${styles.left1}`}>Visit Anytime</p>
-              <p className={`${styles.right1}`}>
-                King Street, Prior Lake, New York.
-              </p>
+              <div className={`${styles.right1}`}>
+                <LocationLink />
+              </div>
             </div>
           </div>
         </div>

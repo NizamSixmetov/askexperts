@@ -18,7 +18,7 @@ const AboutClients = () => {
               </p>
             </div>
             <div className={`${styles.rightDiv}`}>
-              <Link href={"/"}>Get in touch</Link>
+              <Link href={"/Pricing"}>Get in touch</Link>
             </div>
           </div>
           <div className={`${styles.dataDiv}`}>

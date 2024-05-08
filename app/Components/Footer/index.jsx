@@ -89,13 +89,13 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Contact"}>Contacts</Link>
+                    <Link href={"/Contacts"}>Contacts</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/?"}>Testimonials</Link>
+                    <Link href={"/Services"}>Testimonials</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
@@ -107,7 +107,7 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/?"}>Our approach</Link>
+                    <Link href={"/About"}>Our approach</Link>
                   </li>
                 </ul>
               </div>

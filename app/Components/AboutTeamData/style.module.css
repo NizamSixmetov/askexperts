@@ -72,6 +72,23 @@
   width: 100%;
 }
 
+.socialDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socialDiv > a {
+  color: #181818;
+  width: fit-content;
+  transition: 0.4s ease-in-out;
+}
+
+.socialDiv > a:hover {
+  color: #ffcc4a;
+}
+
 @media screen and (max-width: 1200px) {
   .flexDiv {
     gap: 3rem;

@@ -1,7 +1,9 @@
 import Image from "next/image";
 import styles from "./style.module.css";
-import AboutTeamSocialData from "../AboutTeamSocialData";
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 async function fetchData() {
   const url = await fetch("http://localhost:3000/api/teamData");
@@ -21,7 +23,9 @@ async function AboutTeamData() {
             name,
             description,
             position,
-
+            instagram,
+            facebook,
+            twitter,
           }) => {
             return (
               <div className={`${styles.cardDiv}`} key={id}>
@@ -33,7 +37,15 @@ async function AboutTeamData() {
                 <h4>{name}</h4>
                 <p>{description}</p>
                 <div className={`${styles.socialDiv}`}>
-                  <AboutTeamSocialData data={data} />
+                  <Link href={instagram}>
+                    <FaInstagram />
+                  </Link>
+                  <Link href={facebook}>
+                    <FaFacebook />
+                  </Link>
+                  <Link href={twitter}>
+                    <FaTwitter />
+                  </Link>
                 </div>
               </div>
             );

@@ -7,8 +7,8 @@ export default [
       "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
     position: "CEO at Company",
     instagram: "https://www.instagram.com/",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
+    facebook: "https://www.facebook.com",
+    twitter: "https://twitter.com",
   },
   {
     id: 2,
@@ -17,9 +17,9 @@ export default [
     description:
       "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
     position: "Manger",
-    instagram: "https://www.instagram.com/",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com",
+    facebook: "https://www.facebook.com",
+    twitter: "https://twitter.com",
   },
   {
     id: 3,
@@ -28,8 +28,8 @@ export default [
     description:
       "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
     position: "CEO at Company",
-    instagram: "https://www.instagram.com/",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com",
+    facebook: "https://www.facebook.com",
+    twitter: "https://twitter.com",
   },
 ];

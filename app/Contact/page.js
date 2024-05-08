@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="container">
             <PageCap
               pElemnt={"CONTACT US"}
-              h2Element={"Feel Free To Reach Us"}
+              h2Element={"Do Not Hesitate To Contact Us At Your Convenience"}
             />
           </div>
         </div>
