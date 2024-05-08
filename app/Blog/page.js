@@ -3,6 +3,7 @@ import PageCap from "../Components/PageCap";
 import TeamContact from "../Components/TeamContact";
 import styles from "./style.module.css";
 
+
 export const metadata = {
   title: "Blog",
   description: "Blog page",
