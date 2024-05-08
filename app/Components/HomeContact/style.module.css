@@ -228,10 +228,6 @@
     width: 150px;
   }
 
-  .form {
-    /* width: 95%; */
-  }
-
   .messageInput > textarea {
     width: 310px;
     height: 100px;

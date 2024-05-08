@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./style.module.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";

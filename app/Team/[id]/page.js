@@ -1,4 +1,3 @@
-import PageCap from "@/app/Components/PageCap";
 import styles from "./style.module.css";
 import Image from "next/image";
 import Link from "next/link";

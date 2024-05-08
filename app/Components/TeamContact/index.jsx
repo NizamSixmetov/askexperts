@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import styles from "./style.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { FaCircleCheck } from "react-icons/fa6";

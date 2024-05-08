@@ -1,5 +1,6 @@
 import ServicesPricingData from "../ServicesPricingData";
 import styles from "./style.module.css";
+
 const ServicesPricing = () => {
   return (
     <div className={`${styles.flexDiv}`}>

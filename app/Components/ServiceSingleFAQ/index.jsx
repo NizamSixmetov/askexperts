@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 const ServiceSingleFAQ = () => {
   return (
-    <div style={{padding:"4rem 0"}}>
+    <div style={{ padding: "4rem 0" }}>
       <div className={`${styles.cardDiv}`}>
         <div className={`${styles.flex}`}>
           <div className={`${styles.top}`}>

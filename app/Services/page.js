@@ -4,14 +4,6 @@ import styles from "./style.module.css";
 import ServicesPricing from "../Components/ServicesPricing";
 import HomeContact from "../Components/HomeContact";
 import HomeServices from "../Components/HomeServices";
-import { Cabin, Roboto } from "next/font/google";
-
-// const cabin = Roboto({
-//   subsets: ["latin"],
-//   // weight: ["400", "500", "600", "700"],
-//   // weight: [],
-//   weight:['100', '300', '400', '500', '700' , '900']
-// });
 
 export const metadata = {
   title: "Services",

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import styles from "./style.module.css";
 import { FiPhone } from "react-icons/fi";
@@ -30,7 +30,9 @@ const ServiceDetailProces = () => {
                   </div>
                   <div className={`${styles.text}`}>
                     <p>Call Today</p>
-                    <p onClick={() => handlePhoneClick("+1 800 100 900")}>+1 800 100 900</p>
+                    <p onClick={() => handlePhoneClick("+1 800 100 900")}>
+                      +1 800 100 900
+                    </p>
                   </div>
                 </div>
                 <div className={`${styles.flexIcon}`}>

@@ -1,4 +1,3 @@
-import PageCap from "../Components/PageCap";
 import QuoteSingle from "../Components/QuoteSingle";
 import styles from "./style.module.css";
 

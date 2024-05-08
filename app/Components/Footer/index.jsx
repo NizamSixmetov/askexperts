@@ -116,7 +116,9 @@ const Footer = () => {
               <div className={`${styles.left}`}>
                 <h4>Address</h4>
                 <div className={`${styles.bottomLineAddress}`}></div>
-                <div className={`${styles.compStyle}`}><LocationLinkFooter /></div>
+                <div className={`${styles.compStyle}`}>
+                  <LocationLinkFooter />
+                </div>
                 <Link href={"/Contact"}>Book an Appoinment</Link>
               </div>
             </div>

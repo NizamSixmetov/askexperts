@@ -2,8 +2,6 @@ import Link from "next/link";
 import styles from "./style.module.css";
 import { SlNotebook } from "react-icons/sl";
 
-
-
 const Cap = () => {
   return (
     <div className={`${styles.bgDiv}`}>
@@ -14,16 +12,19 @@ const Cap = () => {
               <h2>Your small business growth advisors</h2>
             </div>
             <div className={`${styles.center}`}>
-              <p>Get help from Alex Moore, a
-                professional business coach
-                with advanced experience on
-                growth and business scaling.
+              <p>
+                Get help from Alex Moore, a professional business coach with
+                advanced experience on growth and business scaling.
               </p>
             </div>
             <div className={`${styles.bottom}`}>
-              <Link href={'/Services'} className={`${styles.leftButton}`}>Our Services</Link>
-              <Link href={'/Contact'} className={`${styles.rightButton}`} >
-                <i><SlNotebook /></i>
+              <Link href={"/Services"} className={`${styles.leftButton}`}>
+                Our Services
+              </Link>
+              <Link href={"/Contact"} className={`${styles.rightButton}`}>
+                <i>
+                  <SlNotebook />
+                </i>
                 <p>Book a Meeting</p>
               </Link>
             </div>
@@ -31,7 +32,7 @@ const Cap = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Cap
+export default Cap;

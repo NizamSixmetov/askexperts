@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./style.module.css";
 import Image from "next/image";
 import { TiPlus } from "react-icons/ti";
+
 async function limitData() {
   const url = await fetch("http://localhost:3000/api/HomeProccess?limit=3");
   const result = await url.json();

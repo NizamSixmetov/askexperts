@@ -15,7 +15,6 @@ const QuoteSingle = () => {
           garden is different.”
         </p>
         <img src="/BlogSinglePageImage/PatternSingleBlog.svg" alt="posImage" />
-        {/* <div className={`${styles.cubeDiv}`}></div> */}
       </div>
     </div>
   );

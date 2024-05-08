@@ -17,7 +17,7 @@
   padding: 1rem;
   background-color: #ebebeb;
   border-radius: 1rem;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .flex:hover {
@@ -25,7 +25,7 @@
   &.flex > h3 {
     color: #fff;
   }
-  &.flex>p {
+  &.flex > p {
     color: #fff;
   }
 }
@@ -36,7 +36,7 @@
   font-weight: 600;
   line-height: 20px;
   color: #181818;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .flex > p {
@@ -45,7 +45,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #595566;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 992px) {
@@ -63,7 +63,6 @@
     font-size: 15px;
   }
 }
-
 
 @media screen and (max-width: 576px) {
   .flex > p {

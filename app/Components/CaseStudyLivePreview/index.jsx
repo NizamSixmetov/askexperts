@@ -1,5 +1,4 @@
 import styles from "./style.module.css";
-import Link from "next/link";
 
 const CaseStudyLivePreview = async ({ data }) => {
   return (

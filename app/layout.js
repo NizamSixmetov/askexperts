@@ -3,12 +3,6 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation/index";
 import Footer from "./Components/Footer";
-import { Cabin } from "next/font/google";
-
-// const cabin = Cabin({
-//   subsets: ["latin"],
-//   weight: ["700", "600", "500", "400"],
-// });
 
 export const metadata = {
   title: {

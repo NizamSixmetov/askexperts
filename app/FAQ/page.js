@@ -1,4 +1,3 @@
-import PageCap from "../Components/PageCap";
 import ServiceSingleFAQ from "../Components/ServiceSingleFAQ";
 import styles from "./style.module.css";
 

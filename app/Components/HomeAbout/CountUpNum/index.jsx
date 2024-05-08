@@ -1,4 +1,5 @@
 "use client";
+
 import CountUp, { useCountUp } from "react-countup";
 
 const CountUpNum = () => {

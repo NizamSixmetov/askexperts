@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./style.module.css";
 import { FiPhone } from "react-icons/fi";
 import { IoTimeOutline } from "react-icons/io5";
