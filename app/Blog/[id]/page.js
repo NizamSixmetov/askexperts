@@ -8,7 +8,7 @@ async function fetchData(id) {
 }
 
 export const metadata = {
-  title: "Blog",
+  title: "Article",
   description: "Blog Single page",
   icons: {
     icon: "/metadataIcon/blogSingle.svg",

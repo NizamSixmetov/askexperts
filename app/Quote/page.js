@@ -5,6 +5,9 @@ import styles from "./style.module.css";
 export const metadata = {
   title: "Quote",
   description: "Quote page",
+  icons: {
+    icon: "/metadataIcon/quote.svg",
+  },
 };
 
 const Quote = () => {

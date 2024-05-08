@@ -14,6 +14,14 @@ async function fetchData(id) {
   return result;
 }
 
+export const metadata = {
+  title: "Employee",
+  description: "Employee Page",
+  icons: {
+    icon: "/metadataIcon/person.svg",
+  },
+};
+
 const TeamSingle = async ({ params: { id } }) => {
   const data = await fetchData(id);
   return (

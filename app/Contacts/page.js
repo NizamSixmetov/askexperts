@@ -2,6 +2,14 @@ import HomeContact from "../Components/HomeContact";
 import PageCap from "../Components/PageCap";
 import styles from "./style.module.css";
 
+export const metadata = {
+  title: "Contacts",
+  description: "Contacts Page",
+  icons: {
+    icon: "/metadataIcon/contact.svg",
+  },
+};
+
 const Contacts = () => {
   return (
     <div>

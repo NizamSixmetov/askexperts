@@ -7,6 +7,9 @@ import TeamContact from "../Components/TeamContact";
 export const metadata = {
   title: "Team",
   description: "Team page",
+  icons: {
+    icon: "/metadataIcon/team.svg",
+  },
 };
 
 const Team = () => {

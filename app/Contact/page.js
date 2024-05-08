@@ -8,6 +8,9 @@ import HomeContact from "../Components/HomeContact";
 export const metadata = {
   title: "Contact",
   description: "Contact page",
+  icons: {
+    icon: "/metadataIcon/contact.svg",
+  },
 };
 
 const Contact = () => {

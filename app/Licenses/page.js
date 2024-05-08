@@ -8,6 +8,9 @@ import styles from "./style.module.css";
 export const metadata = {
   title: "Licenses",
   description: "Licenses page",
+  icons: {
+    icon: "/metadataIcon/Licenses.svg",
+  },
 };
 
 const Licenses = () => {

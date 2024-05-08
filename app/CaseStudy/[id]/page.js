@@ -7,6 +7,14 @@ import CaseStudyProjectResult from "@/app/Components/CaseStudyProjectResult";
 import TeamSubscribe from "@/app/Components/TeamSubscribe";
 import MoreCase from "@/app/Components/MoreCase";
 
+export const metadata = {
+  title: "Case",
+  description: "Case Page",
+  icons: {
+    icon: "/metadataIcon/caseSingle.svg",
+  },
+};
+
 async function fetchData(id) {
   const url = await fetch("http://localhost:3000/api/HomeProccess/" + id);
   const result = await url.json();

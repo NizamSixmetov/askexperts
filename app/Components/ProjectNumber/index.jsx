@@ -11,7 +11,6 @@ function ProjectNumber() {
   useEffect(() => {
     axios.get(url).then((response) => {
       setMockData(response.data);
-      console.log(response.data);
     });
   }, []);
   let startNum = 0;

@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Not Found",
   description: "404 page",
+  icons: {
+    icon: "/metadataIcon/notFound.svg",
+  },
 };
 
 export default function NotFound() {

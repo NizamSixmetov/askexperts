@@ -5,6 +5,9 @@ import styles from "./style.module.css";
 export const metadata = {
   title: "Pricing",
   description: "Pricing page",
+  icons: {
+    icon: "/metadataIcon/price.svg",
+  },
 };
 
 const Pricing = () => {
