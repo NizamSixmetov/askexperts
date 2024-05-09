@@ -19,7 +19,7 @@ function ProjectNumber() {
   useCountUp({
     ref: "counter",
     end: 1,
-    // enableScrollSpy: true,
+    enableScrollSpy: true,
     scrollSpyDelay: 10,
   });
   return (
@@ -29,7 +29,7 @@ function ProjectNumber() {
           return (
             <div className={`${styles.numberCard}`} key={id}>
               <p className={`${styles.capDiv}`}>
-                <CountUp start={startNum} end={cap} /> +
+                <CountUp start={startNum} end={cap} enableScrollSpy /> +
               </p>
               <p className={`${styles.descriptionDiv}`}>{description}</p>
             </div>
