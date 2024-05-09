@@ -1,11 +1,15 @@
-async function fetchData() {
-  const url = await fetch("http://localhost:3000/api/blogNewsData");
-  const result = await url.json();
-  return result;
+async function getData() {
+  const res = await fetch("http://localhost:3000/api/blogNewsData");
+
+  if (!res.ok) {
+    throw new Error("Failed to Fetch data");
+  }
+
+  return res.json();
 }
 
-const Numune = async () => {
-  const data = await fetchData();
+export default async function Numune() {
+  const data = await getData();
   return (
     <div style={{ margin: "100px 0 0 0" }}>
       {data.map(({ id }) => {
@@ -13,6 +17,4 @@ const Numune = async () => {
       })}
     </div>
   );
-};
-
-export default Numune;
+}
