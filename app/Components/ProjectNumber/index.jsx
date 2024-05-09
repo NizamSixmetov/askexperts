@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import axios from "axios";
 import CountUp, { useCountUp } from "react-countup";
 
-const url = "/api/projectNumber/";
+const url = "http://localhost:3000/api/projectNumber/";
 
 function ProjectNumber() {
   const [mockData, setMockData] = useState([]);

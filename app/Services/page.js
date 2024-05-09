@@ -8,6 +8,9 @@ import HomeServices from "../Components/HomeServices";
 export const metadata = {
   title: "Services",
   description: "Services page",
+  icons: {
+    icon: "/metadataIcon/services.svg",
+  },
 };
 
 const services = () => {

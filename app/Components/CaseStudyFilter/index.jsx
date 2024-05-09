@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const url = "/api/HomeProccess";
+const url = "http://localhost:3000/api/HomeProccess";
 
 const CaseStudyFilter = () => {
   const [products, setProducts] = useState([]);
@@ -65,8 +65,8 @@ const CaseStudyFilter = () => {
             <button
               onClick={() => handleCategoryClick("Audit&Evaluation")}
               className={`${selectedCategory === "Audit&Evaluation"
-                  ? styles.bottomActive
-                  : ""
+                ? styles.bottomActive
+                : ""
                 }`}
             >
               Audit & Evaluation

@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import Image from "next/image";
 
 async function fetchData() {
-  const url = await fetch("/api/data/");
+  const url = await fetch("http://localhost:3000/api/data/");
   const result = await url.json();
   return result;
 }

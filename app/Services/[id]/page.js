@@ -8,6 +8,14 @@ import ServiceDetailHistory from "@/app/Components/ServiceDetailHistory";
 import ServiceDetailProces from "@/app/Components/ServiceDetailProces";
 import ServiceSingleFAQ from "@/app/Components/ServiceSingleFAQ";
 
+export const metadata = {
+  title: "Service",
+  description: "Service Single",
+  icons: {
+    icon: "/metadataIcon/services.svg",
+  },
+};
+
 async function fetchData(id) {
   const url = await fetch("/api/data/" + id);
   const result = await url.json();

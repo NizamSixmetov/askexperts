@@ -16,7 +16,7 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const url = await fetch("/api/HomeProccess/" + id);
+  const url = await fetch("http://localhost:3000/api/HomeProccess/" + id);
   const result = await url.json();
   return result;
 }

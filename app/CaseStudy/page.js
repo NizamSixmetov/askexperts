@@ -11,7 +11,7 @@ export const metadata = {
   },
 };
 
-const url = "/api/HomeProccess";
+const url = "http://localhost:3000/api/HomeProccess";
 
 const CaseStudy = () => {
   return (
