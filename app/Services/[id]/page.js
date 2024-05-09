@@ -1,5 +1,5 @@
-import HomePartner from "@/app/Components/HomePartner";
 import styles from "./style.module.css";
+import HomePartner from "@/app/Components/HomePartner";
 import PageCap from "@/app/Components/PageCap";
 import ServiceSingleSwiper from "@/app/Components/ServiceSingleSwiper";
 import ServiceSingleWill from "@/app/Components/ServiceSingleWill";
@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const url = await fetch("/api/data/" + id);
+  const url = await fetch("http://localhost:3000/api/data/" + id);
   const result = await url.json();
   return result;
 }
@@ -25,7 +25,7 @@ async function fetchData(id) {
 const ServiceSingle = async ({ params: { id } }) => {
   const data = await fetchData(id);
   return (
-    <div>
+    <>
       <div className={`${styles.firstBgDiv}`}>
         <div className={`${styles.marginDiv}`}>
           <div className={`${styles.bgDiv}`}>
@@ -59,7 +59,7 @@ const ServiceSingle = async ({ params: { id } }) => {
         <ServiceDetailProces />
         <ServiceSingleFAQ />
       </div>
-    </div>
+    </>
   );
 };
 

@@ -5,10 +5,10 @@ const CountUpNum1 = () => {
   useCountUp({
     ref: "counter",
     end: 1,
-    enableScrollSpy: true,
+    // enableScrollSpy: true,
     scrollSpyDelay: 10,
   });
-  return <CountUp start={0} end={1} enableScrollSpy />;
+  return <CountUp start={0} end={1} />;
 };
 
 export default CountUpNum1;

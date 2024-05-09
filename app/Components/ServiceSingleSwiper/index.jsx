@@ -105,6 +105,18 @@ const ServiceSingleSwiper = () => {
             </p>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className={`${styles.cardDiv}`}>
+            <i>
+              <FaNewspaper />
+            </i>
+            <h3>The Balance Sheet</h3>
+            <p>
+              The Balance Sheet is a summary of the assets and liabilities and
+              equity of a business at a specific point of time.
+            </p>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
