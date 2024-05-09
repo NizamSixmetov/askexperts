@@ -57,7 +57,6 @@ const BlogSingleBestBusiness = ({ data }) => {
               src="/BlogSinglePageImage/PatternSingleBlog.svg"
               alt="posImage"
             />
-            {/* <div className={`${styles.cubeDiv}`}></div> */}
           </div>
         </div>
         <div className={`${styles.threeDiv}`}>

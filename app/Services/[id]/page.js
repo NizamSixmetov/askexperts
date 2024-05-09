@@ -9,7 +9,7 @@ import ServiceDetailProces from "@/app/Components/ServiceDetailProces";
 import ServiceSingleFAQ from "@/app/Components/ServiceSingleFAQ";
 
 async function fetchData(id) {
-  const url = await fetch("http://localhost:3000/api/data/" + id);
+  const url = await fetch("/api/data/" + id);
   const result = await url.json();
   return result;
 }

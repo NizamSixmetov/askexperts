@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const url = "http://localhost:3000/api/HomeProccess";
+const url = "/api/HomeProccess";
 
 const CaseStudyFilter = () => {
   const [products, setProducts] = useState([]);
@@ -41,17 +41,15 @@ const CaseStudyFilter = () => {
             </button>
             <button
               onClick={() => handleCategoryClick("Taxes&Efficiency")}
-              className={`${
-                selectedCategory === "Taxes&Efficiency" ? styles.topActive : ""
-              }`}
+              className={`${selectedCategory === "Taxes&Efficiency" ? styles.topActive : ""
+                }`}
             >
               Taxes & Efficiency
             </button>
             <button
               onClick={() => handleCategoryClick("InvestmentBanking")}
-              className={`${
-                selectedCategory === "InvestmentBanking" ? styles.topActive : ""
-              }`}
+              className={`${selectedCategory === "InvestmentBanking" ? styles.topActive : ""
+                }`}
             >
               Investment banking
             </button>
@@ -59,19 +57,17 @@ const CaseStudyFilter = () => {
           <div className={`${styles.bottomFilter}`}>
             <button
               onClick={() => handleCategoryClick("FinancialPlan")}
-              className={`${
-                selectedCategory === "FinancialPlan" ? styles.bottomActive : ""
-              }`}
+              className={`${selectedCategory === "FinancialPlan" ? styles.bottomActive : ""
+                }`}
             >
               Financial Plan
             </button>
             <button
               onClick={() => handleCategoryClick("Audit&Evaluation")}
-              className={`${
-                selectedCategory === "Audit&Evaluation"
+              className={`${selectedCategory === "Audit&Evaluation"
                   ? styles.bottomActive
                   : ""
-              }`}
+                }`}
             >
               Audit & Evaluation
             </button>
