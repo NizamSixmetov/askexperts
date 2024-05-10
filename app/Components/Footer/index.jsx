@@ -124,6 +124,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className={`${styles.privacyPolicy}`}>
+          <div className={`${styles.privacyPolicyLine}`}></div>
+          <p>
+            ©2022 Consultalk. All rights reserved | Terms of Service | Privacy
+            Policy
+          </p>
+        </div>
       </div>
     </div>
   );

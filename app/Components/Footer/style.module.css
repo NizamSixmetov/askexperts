@@ -2,7 +2,7 @@
   background-image: url("/Footer/Background.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
+  padding: 5rem 0 1rem 0;
 }
 
 .baseFlex {
@@ -137,6 +137,28 @@
   width: 8%;
 }
 
+.privacyPolicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0 0 0;
+}
+
+.privacyPolicyLine {
+  width: 100%;
+  border: 1px solid #707070;
+}
+
+.privacyPolicy > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
 @media screen and (max-width: 992px) {
   .centerLine {
     display: none;
@@ -216,5 +238,16 @@
 
   .left {
     gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .privacyPolicy > p {
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0;
   }
 }
