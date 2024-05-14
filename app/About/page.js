@@ -33,7 +33,7 @@ const About = () => {
       <ProjectNumber />
       <AboutClients />
       <AboutHistory />
-      {/* <AboutTeam /> */}
+      <AboutTeam />
       <div style={{ padding: "4rem 0" }}>
         <HomeBookNow />
       </div>

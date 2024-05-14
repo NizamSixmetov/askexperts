@@ -10,20 +10,9 @@ const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/projectNumber/`;
 function ProjectNumber() {
   const [mockData, setMockData] = useState([]);
   useEffect(() => {
-    async function fetchPlans() {
-      try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/projectNumber/`); // Replace with your actual endpoint
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setMockData(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-    fetchPlans();
-
+    axios.get(url).then((response) => {
+      setMockData(response.data);
+    });
   }, []);
   // let startNum = 0;
 
