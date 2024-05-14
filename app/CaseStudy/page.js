@@ -11,7 +11,7 @@ export const metadata = {
   },
 };
 
-const url = "http://localhost:3000/api/HomeProccess";
+const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess`;
 
 const CaseStudy = () => {
   return (

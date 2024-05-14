@@ -17,7 +17,9 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const url = await fetch("http://localhost:3000/api/data/" + id);
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/data/` + id
+  );
   const result = await url.json();
   return result;
 }

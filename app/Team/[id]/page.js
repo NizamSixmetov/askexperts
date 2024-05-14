@@ -8,7 +8,9 @@ import { ImLinkedin2 } from "react-icons/im";
 import TeamSubscribe from "@/app/Components/TeamSubscribe";
 
 async function fetchData(id) {
-  const url = await fetch("http://localhost:3000/api/teamFullData/" + id);
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/teamFullData/` + id
+  );
   const result = await url.json();
   return result;
 }

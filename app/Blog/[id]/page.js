@@ -2,7 +2,9 @@ import BlogSingleBestBusiness from "@/app/Components/BlogSingleBestBusiness";
 import styles from "./style.module.css";
 
 async function fetchData(id) {
-  const url = await fetch("http://localhost:3000/api/blogNewsData/" + id);
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData/` + id
+  );
   const result = await url.json();
   return result;
 }

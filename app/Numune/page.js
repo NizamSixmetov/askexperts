@@ -1,5 +1,7 @@
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/blogNewsData");
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`
+  );
 
   if (!res.ok) {
     throw new Error("Failed to Fetch data");

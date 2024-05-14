@@ -3,7 +3,9 @@ import styles from "./style.module.css";
 import Image from "next/image";
 
 async function fetchData() {
-  const url = await fetch("http://localhost:3000/api/homeBlog");
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/homeBlog`
+  );
   const result = await url.json();
   return result;
 }
