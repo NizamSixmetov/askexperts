@@ -38,5 +38,7 @@ export async function GET(request) {
     },
   ];
 
-  return new Response(JSON.stringify(data));
+  return new Response(JSON.stringify(data), {
+    headers: { "Content-Type": "application/json" },
+  });
 }
