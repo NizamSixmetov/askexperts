@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess`;
+const url = `/api/HomeProccess`;
 
 const CaseStudyFilter = () => {
   const [products, setProducts] = useState([]);

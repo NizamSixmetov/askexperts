@@ -4,7 +4,7 @@ import Image from "next/image";
 
 async function fetchData() {
   const url = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/homeBlog`
+    `/api/homeBlog`
   );
   const result = await url.json();
   return result;

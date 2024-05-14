@@ -1,7 +1,5 @@
 async function getData() {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`
-  );
+  const res = await fetch(`/api/blogNewsData`);
 
   if (!res.ok) {
     throw new Error("Failed to Fetch data");

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 async function fetchData() {
-  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/clientData/`);
+  const url = await fetch(`/api/clientData/`);
   const result = await url.json();
   return result;
 }
