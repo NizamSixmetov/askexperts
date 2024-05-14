@@ -3,7 +3,6 @@ import PageCap from "../Components/PageCap";
 import TeamContact from "../Components/TeamContact";
 import styles from "./style.module.css";
 
-
 export const metadata = {
   title: "Blog",
   description: "Blog page",
@@ -18,7 +17,7 @@ const Blog = () => {
       <div className={`${styles.marginDiv}`}>
         <div className={`${styles.bgDiv}`}>
           <div className="container">
-            <PageCap pElemnt={"Blog"} h2Element={"Latest Blogs & News"} />
+            <PageCap text={"Blog"} h2Element={"Latest Blogs & News"} />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 async function fetchData() {
-  const url = await fetch(`/api/teamFullData`);
+  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/teamFullData`);
   const result = await url.json();
   return result;
 }

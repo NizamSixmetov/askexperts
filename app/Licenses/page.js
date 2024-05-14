@@ -19,7 +19,7 @@ const Licenses = () => {
       <div className={`${styles.marginDiv}`}>
         <div className={`${styles.bgDiv}`}>
           <div className="container">
-            <PageCap pElemnt={"Licenses"} h2Element={"All asset's Licenses"} />
+            <PageCap text={"Licenses"} h2Element={"All asset's Licenses"} />
           </div>
         </div>
       </div>

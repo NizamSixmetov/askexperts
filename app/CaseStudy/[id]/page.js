@@ -16,7 +16,9 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const url = await fetch(`/api/HomeProccess/` + id);
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess/` + id
+  );
   const result = await url.json();
   return result;
 }

@@ -17,7 +17,9 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const url = await fetch(`/api/data/` + id);
+  const url = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/data/` + id
+  );
   const result = await url.json();
   return result;
 }
@@ -31,7 +33,7 @@ const ServiceSingle = async ({ params: { id } }) => {
           <div className={`${styles.bgDiv}`}>
             <div className="container">
               <PageCap
-                pElemnt={"Services"}
+                text={"Services"}
                 h2Element={"Creative Services For Boost Your Business Growth"}
               />
             </div>

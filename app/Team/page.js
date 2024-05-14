@@ -18,10 +18,7 @@ const Team = () => {
       <div className={`${styles.marginDiv}`}>
         <div className={`${styles.bgDiv}`}>
           <div className="container">
-            <PageCap
-              pElemnt={"Team"}
-              h2Element={"The best consultants for you"}
-            />
+            <PageCap text={"Team"} h2Element={"The best consultants for you"} />
           </div>
         </div>
       </div>

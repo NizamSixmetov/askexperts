@@ -26,7 +26,7 @@ const HomeAbout = () => {
                     <FaStar />
                   </i>
                   <p>
-                    <CountUpNum /> +
+                    {/* <CountUpNum /> + */}
                   </p>
                 </div>
                 <p>Business Services</p>
@@ -41,7 +41,7 @@ const HomeAbout = () => {
                     <FaSmile />
                   </i>
                   <p>
-                    <CountUpNum /> +
+                    {/* <CountUpNum /> + */}
                   </p>
                 </div>
                 <p>Happy Customer</p>

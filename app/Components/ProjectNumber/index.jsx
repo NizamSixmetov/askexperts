@@ -14,14 +14,14 @@ function ProjectNumber() {
       setMockData(response.data);
     });
   }, []);
-  let startNum = 0;
+  // let startNum = 0;
 
-  useCountUp({
-    ref: "counter",
-    end: 1,
-    enableScrollSpy: true,
-    scrollSpyDelay: 10,
-  });
+  // useCountUp({
+  //   ref: "counter",
+  //   end: 1,
+  //   enableScrollSpy: true,
+  //   scrollSpyDelay: 10,
+  // });
   return (
     <div className="container">
       <div className={`${styles.flexDiv}`}>
@@ -29,7 +29,7 @@ function ProjectNumber() {
           return (
             <div className={`${styles.numberCard}`} key={id}>
               <p className={`${styles.capDiv}`}>
-                <CountUp start={startNum} end={cap} enableScrollSpy /> +
+                {/* <CountUp start={startNum} end={cap} enableScrollSpy /> + */}
               </p>
               <p className={`${styles.descriptionDiv}`}>{description}</p>
             </div>

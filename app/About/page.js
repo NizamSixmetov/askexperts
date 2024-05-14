@@ -23,7 +23,7 @@ const About = () => {
         <div className={`${styles.bgDiv}`}>
           <div className="container">
             <PageCap
-              pElemnt={"Services"}
+              text="Services"
               h2Element={"Creative Services For Boost Your Business Growth"}
             />
           </div>

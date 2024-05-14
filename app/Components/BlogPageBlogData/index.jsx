@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 async function fetchData() {
-  const url = await fetch(`/api/blogNewsData`);
+  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`);
   const result = await url.json();
   return result;
 }

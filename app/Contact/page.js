@@ -20,7 +20,7 @@ const Contact = () => {
         <div className={`${styles.bgDiv}`}>
           <div className="container">
             <PageCap
-              pElemnt={"CONTACT US"}
+              text={"CONTACT US"}
               h2Element={"Do Not Hesitate To Contact Us At Your Convenience"}
             />
           </div>

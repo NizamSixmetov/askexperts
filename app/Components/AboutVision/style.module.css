@@ -67,7 +67,7 @@
   flex-direction: row;
   gap: 0.5rem;
   justify-content: left;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .topVariant > i,

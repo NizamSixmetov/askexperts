@@ -17,7 +17,7 @@ const Pricing = () => {
         <div className={`${styles.bgDiv}`}>
           <div className="container">
             <PageCap
-              pElemnt={"Prices"}
+              text={"Prices"}
               h2Element={"Choose a plan that suits you"}
             />
           </div>

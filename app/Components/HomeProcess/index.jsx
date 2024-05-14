@@ -19,7 +19,7 @@ const HomeProcess = () => {
           </p>
           <div className={`${styles.item}`}>
             <span className={`${styles.span1}`}>
-              <CountUpNum1 />
+              {/* <CountUpNum1 /> */}
             </span>
             <div className={`${styles.inItem}`}>
               <p className={`${styles.oneP}`}>Setup Account</p>
@@ -31,7 +31,7 @@ const HomeProcess = () => {
           </div>
           <div className={`${styles.item}`}>
             <span className={`${styles.span2}`}>
-              <CountUpNum2 />
+              {/* <CountUpNum2 /> */}
             </span>
             <div className={`${styles.inItem}`}>
               <p className={`${styles.oneP}`}>Consult with us</p>
@@ -43,7 +43,7 @@ const HomeProcess = () => {
           </div>
           <div className={`${styles.item}`}>
             <span className={`${styles.span3}`}>
-              <CountUpNum3 />
+              {/* <CountUpNum3 /> */}
             </span>
             <div className={`${styles.inItem}`}>
               <p className={`${styles.oneP}`}>Payment & Boost</p>

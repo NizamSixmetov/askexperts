@@ -11,7 +11,7 @@ export const metadata = {
   },
 };
 
-const url = `/api/HomeProccess`;
+const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess`;
 
 const CaseStudy = () => {
   return (
@@ -19,7 +19,7 @@ const CaseStudy = () => {
       <div className={`${styles.marginDiv}`}>
         <div className={`${styles.bgDiv}`}>
           <div className="container">
-            <PageCap pElemnt={"Case Studies"} h2Element={"Case Studies"} />
+            <PageCap text={"Case Studies"} h2Element={"Case Studies"} />
           </div>
         </div>
       </div>
