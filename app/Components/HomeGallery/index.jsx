@@ -3,14 +3,22 @@ import styles from "./style.module.css";
 import Image from "next/image";
 import { TiPlus } from "react-icons/ti";
 
-async function limitData() {
-  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess?limit=3`);
-  const result = await url.json();
-  return result;
+// http://localhost:3000/api/HomeProccess?limit=3
+
+export async function fetchData() {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess?limit=3`
+  );
+  return res.json();
 }
 
-async function HomeGallery() {
-  const limitCard = await limitData();
+const HomeGallery = async () => {
+  // if (!limitCard || limitCard.length === 0) {
+  //   return <div>No data</div>;
+  // }
+
+  const limitCard = await fetchData();
+
   return (
     <div className={`${styles.positionDiv}`}>
       <div className={`container ${styles.absoluteDiv}`}>
@@ -29,7 +37,7 @@ async function HomeGallery() {
             {limitCard.map(({ id, image, name, description }) => {
               return (
                 <div className={`${styles.limitCard}`} key={id}>
-                  <Image src={image} fill alt="Image" />
+                  <Image src={image} layout="fill" alt="Image" />
                   <div className={`${styles.insetDiv}`}>
                     <Link href={`/CaseStudy/${id}`}>
                       <TiPlus />
@@ -48,6 +56,36 @@ async function HomeGallery() {
       </div>
     </div>
   );
-}
+};
+
+// export async function getStaticProps() {
+//   try {
+//     console.log(
+//       "Fetching data from:",
+//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess?limit=3`
+//     );
+//     const res = await fetch(
+//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess?limit=3`
+//     );
+//     if (!res.ok) {
+//       throw new Error(`Failed to fetch data: ${res.statusText}`);
+//     }
+//     const limitCard = await res.json();
+//     console.log("Fetched data:", limitCard);
+
+//     return {
+//       props: {
+//         limitCard,
+//       },
+//     };
+//   } catch (error) {
+//     console.error("Failed to fetch data", error);
+//     return {
+//       props: {
+//         limitCard: [],
+//       },
+//     };
+//   }
+// };
 
 export default HomeGallery;

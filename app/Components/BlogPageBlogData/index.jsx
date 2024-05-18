@@ -2,14 +2,16 @@ import styles from "./style.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-async function fetchData() {
-  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`);
-  const result = await url.json();
-  return result;
+export async function fetchData() {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`
+  );
+  return res.json();
 }
 
 const BlogPageBlogData = async () => {
   const data = await fetchData();
+
   return (
     <div className="container">
       <div className={`${styles.flex}`}>
