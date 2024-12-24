@@ -68,12 +68,12 @@ const TeamContact = () => {
           <div className={`${styles.right}`}>
             <img
               className={`${styles.relIMage}`}
-              src="/TeamContactImage/TeamContactBg.svg"
+              src="/TeamContactimage/TeamContactbg.svg"
               alt="Image"
             />
             <img
               className={`${styles.posImage}`}
-              src="/TeamContactImage/Pattern.svg"
+              src="/TeamContactimage/Pattern.svg"
               alt="Image"
             />
           </div>
