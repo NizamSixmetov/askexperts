@@ -7,7 +7,7 @@ import { TiPlus } from "react-icons/ti";
 
 export async function fetchData() {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess?limit=3`
+    `https://askexpressdata.vercel.app/HomeProccess?_limit=3`
   );
   return res.json();
 }
