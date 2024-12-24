@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 async function fetchData(id) {
   const url = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData/` + id
+    `https://askexpressdata.vercel.app/blogNewsData/` + id
   );
   const result = await url.json();
   return result;

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export async function fetchData() {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogNewsData`
+    `https://askexpressdata.vercel.app/blogNewsData/`
   );
   return res.json();
 }
