@@ -4,7 +4,6 @@ import styles from "./style.module.css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-// import Image from "next/image";
 
 const HomePartner = () => {
   return (
@@ -22,13 +21,6 @@ const HomePartner = () => {
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
             <img src="/HomePartner/1.svg" alt="TestImage1" />
-            {/* <Image
-              src={"/HomePartner/1.svg"}
-              alt="TestImage1"
-              width={100}
-              height={100}
-              loading="lazy"
-            /> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
