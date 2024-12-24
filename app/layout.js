@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation/index";
 import Footer from "./Components/Footer";
+import WarningModal from "./Components/WarningModal/index.jsx";
 
 export const metadata = {
   title: {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <WarningModal />
       </body>
     </html>
   );

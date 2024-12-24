@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Cap from "./Components/Cap";
 import ClientFeedbackHome from "./Components/ClientFeedbackHome/indx";
 import HomeAbout from "./Components/HomeAbout";

@@ -1,0 +1,29 @@
+.modalWindow {
+  position: fixed;
+  z-index: 99;
+  top: calc(100vh / 2);
+  left: calc(100% / 2);
+  translate: -50%;
+  background-color: #ffcc00;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: max-content;
+}
+
+.modalWindow > p {
+  color: #cc3300;
+  user-select: none;
+}
+
+.modalWindow > .modalWindowClose {
+  overflow: hidden;
+  border: none;
+  background-color: rgb(206, 57, 57);
+  border-radius: 50%;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+}
