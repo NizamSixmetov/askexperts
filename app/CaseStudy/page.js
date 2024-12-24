@@ -11,7 +11,7 @@ export const metadata = {
   },
 };
 
-const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/HomeProccess`;
+// const url = `https://askexpressdata.vercel.app/HomeProccess`;
 
 const CaseStudy = () => {
   return (
