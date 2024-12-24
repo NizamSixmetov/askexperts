@@ -68,9 +68,9 @@ const ServiceDetailProces = () => {
               <div className={`${styles.posFrame}`}></div>
             </div>
             <div className={`${styles.rightImage}`}>
-              <img src="/ServiceDetailProcesimage/righttop.svg" alt="Image" />
+              <img src="/ServiceDetailProcesImage/righttop.svg" alt="Image" />
               <img
-                src="/ServiceDetailProcesimage/rightBottom.svg"
+                src="/ServiceDetailProcesImage/rightBottom.svg"
                 alt="Image"
               />
               <img
