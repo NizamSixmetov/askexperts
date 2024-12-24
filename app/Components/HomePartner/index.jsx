@@ -21,7 +21,7 @@ const HomePartner = () => {
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
             {/* <img src="/Homepartner/1.svg" alt="Image" /> */}
-            <img src="/public/HomePartner/1.svg" alt="Image" />
+            <img src="/public/HomePartner/1.svg" alt="TestImage" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
