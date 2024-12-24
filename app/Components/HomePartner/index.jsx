@@ -20,9 +20,9 @@ const HomePartner = () => {
       >
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            {/* <img src="/Homepartner/1.svg" alt="Image" /> */}
-            {/* <img src="../../../public/HomePartner/1.svg" alt="TestImage1" /> */}
-            <img src="../../../public/HomePartner/1.svg" alt="TestImage1" />
+            <img src="/Homepartner/1.svg" alt="TestImage1" />
+            {/* <img src="/public/HomePartner/1.svg" alt="TestImage2" /> */}
+            {/* <img src="../../../public/HomePartner/1.svg" alt="TestImage3" /> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
