@@ -20,10 +20,19 @@
   border: none;
   background-color: rgb(206, 57, 57);
   border-radius: 50%;
-  color: white;
+  color: #ffcc00;
   padding: 0.5rem 0.7rem;
   position: absolute;
   right: -10px;
   top: -10px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.modalWindow > .modalWindowClose:hover {
+  color: whitesmoke;
+  padding: 0.6rem 0.8rem;
+  top: -11px;
+  right: -11px;
+  rotate: -360deg;
 }
