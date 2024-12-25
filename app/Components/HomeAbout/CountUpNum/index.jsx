@@ -13,13 +13,3 @@ const CountUpNum = () => {
 };
 
 export default CountUpNum;
-
-// import React from 'react'
-
-// const index = () => {
-//   return (
-//     <>index</>
-//   )
-// }
-
-// export default index

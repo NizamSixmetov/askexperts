@@ -12,13 +12,3 @@ const CountUpNum3 = () => {
 };
 
 export default CountUpNum3;
-
-// import React from 'react'
-
-// const index = () => {
-//   return (
-//     <>index</>
-//   )
-// }
-
-// export default index
