@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import { IoRadioButtonOn } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io";
@@ -27,6 +27,17 @@ const MobileMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add(styles.noScroll);
+    } else {
+      document.body.classList.remove(styles.noScroll);
+    }
+    return () => {
+      document.body.classList.remove(styles.noScroll);
+    };
+  }, [isOpen]);
   return (
     <div className={`${styles.first}`}>
       <div className={`${styles.toggleDiv}`}>
