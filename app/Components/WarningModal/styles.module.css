@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 .modalWindow {
   position: fixed;
   z-index: 99;
@@ -13,6 +15,9 @@
 .modalWindow > p {
   color: #cc3300;
   user-select: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .modalWindow > .modalWindowClose {
@@ -35,4 +40,62 @@
   top: -11px;
   right: -11px;
   rotate: -360deg;
+}
+
+@media screen and (max-width: 992px) {
+  .modalWindow {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-break: normal;
+  }
+
+  .modalWindow > p {
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modalWindow {
+    width: 90%;
+  }
+
+  .modalWindow > p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modalWindow {
+    width: 80%;
+    padding: 0.8rem 0.7rem;
+  }
+
+  .modalWindow > .modalWindowClose {
+    top: -15px;
+    right: -15px;
+  }
+
+  .modalWindow > .modalWindowClose:hover {
+    color: whitesmoke;
+    padding: 0.6rem 0.8rem;
+    top: -16px;
+    right: -16px;
+    rotate: -360deg;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .modalWindow {
+    width: 90%;
+    padding: 0.8rem 0.8rem;
+  }
+
+  .modalWindow > .modalWindowClose {
+    font-size: 10px;
+    top: -13px;
+    right: -13px;
+  }
 }
