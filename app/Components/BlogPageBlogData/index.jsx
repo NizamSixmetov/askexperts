@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export async function fetchData() {
-  const res = await fetch(
-    `https://askexpressdata.vercel.app/blogNewsData/`
-  );
+  const res = await fetch(`https://askexpressdata.vercel.app/blogNewsData/`);
   return res.json();
 }
 
@@ -61,3 +59,5 @@ const BlogPageBlogData = async () => {
 };
 
 export default BlogPageBlogData;
+
+// Burda qalmiwdiq

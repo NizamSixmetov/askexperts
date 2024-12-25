@@ -11,8 +11,6 @@ export const metadata = {
   },
 };
 
-// const url = `https://askexpressdata.vercel.app/HomeProccess`;
-
 const CaseStudy = () => {
   return (
     <div>
