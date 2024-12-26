@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Navigation from "./Components/Navigation/index";
 import Footer from "./Components/Footer";
 import WarningModal from "./Components/WarningModal/index.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navigation />
         {children}
+        <SpeedInsights />
         <Footer />
         <WarningModal />
       </body>
