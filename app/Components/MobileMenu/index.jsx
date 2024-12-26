@@ -86,6 +86,7 @@ const MobileMenu = () => {
                           }
                         >
                           <Link
+                            prefetch
                             onClick={() => {
                               toggleMenu();
                             }}

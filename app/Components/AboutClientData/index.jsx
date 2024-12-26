@@ -22,7 +22,7 @@ async function AboutClientData() {
                 <h3>{cap}</h3>
                 <p>{description}</p>
                 <div className={`${styles.linkDiv}`}>
-                  <Link href={`/Pricing`}>Read More</Link>
+                  <Link href={`/Pricing`} prefetch>Read More</Link>
                   <i>
                     <FaArrowRight />
                   </i>

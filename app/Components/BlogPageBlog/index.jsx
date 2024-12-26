@@ -12,7 +12,7 @@ const BlogPageBlog = () => {
             <h3>Take a look at our latest articles & resources</h3>
           </div>
           <div className={`${styles.topRight}`}>
-            <Link href={"/Blog"}>More News</Link>
+            <Link href={"/Blog"} prefetch>More News</Link>
           </div>
         </div>
         <div>

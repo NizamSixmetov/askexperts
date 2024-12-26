@@ -26,7 +26,9 @@ export default function NotFound() {
                 </p>
               </div>
               <div className={`${styles.bottom}`}>
-                <Link href={"/"}>Back to home</Link>
+                <Link href={"/"} prefetch>
+                  Back to home
+                </Link>
               </div>
             </div>
             <img src="/notFoundImage/notFoundBackground.svg" alt="Image" />

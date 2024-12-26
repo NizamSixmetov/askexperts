@@ -118,7 +118,7 @@ const HomeBlog = async () => {
             <h2>Take a look at our latest articles & resources</h2>
           </div>
           <div className={`${styles.right1}`}>
-            <Link href="/Blog">More News</Link>
+            <Link href="/Blog" prefetch>More News</Link>
           </div>
         </div>
         <div className={`${styles.topFlex}`}>

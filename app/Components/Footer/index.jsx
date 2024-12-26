@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className={`${styles.baseFlex}`}>
           <div className={`${styles.icon}`}>
-            <Link href={"/"}>
+            <Link href={"/"} prefetch>
               <img src="/Navigation/LogoNavigation.svg" alt="Logo" />
             </Link>
             <div className={`${styles.socialDiv}`}>
@@ -40,31 +40,31 @@ const Footer = () => {
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Services"}> Service</Link>
+                  <Link href={"/Services"} prefetch> Service</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={`/FAQ`}>FAQ</Link>
+                  <Link href={`/FAQ`} prefetch>FAQ</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/error"}>Single Service</Link>
+                  <Link href={"/error"} prefetch>Single Service</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Quote"}>Get Quote</Link>
+                  <Link href={"/Quote"} prefetch>Get Quote</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Pricing"}>Prices</Link>
+                  <Link href={"/Pricing"} prefetch>Prices</Link>
                 </li>
               </ul>
             </div>
@@ -77,37 +77,37 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/About"}> About</Link>
+                    <Link href={"/About"} prefetch> About</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Blog"}>News</Link>
+                    <Link href={"/Blog"} prefetch>News</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Contacts"}>Contacts</Link>
+                    <Link href={"/Contacts"} prefetch>Contacts</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Services"}>Testimonials</Link>
+                    <Link href={"/Services"} prefetch>Testimonials</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Team"}>Our team</Link>
+                    <Link href={"/Team"} prefetch>Our team</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/About"}>Our approach</Link>
+                    <Link href={"/About"} prefetch>Our approach</Link>
                   </li>
                 </ul>
               </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                 <div className={`${styles.compStyle}`}>
                   <LocationLinkFooter />
                 </div>
-                <Link href={"/Contact"}>Book an Appoinment</Link>
+                <Link href={"/Contact"} prefetch>Book an Appoinment</Link>
               </div>
             </div>
           </div>
