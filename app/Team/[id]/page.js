@@ -35,7 +35,7 @@ const TeamSingle = async ({ params: { id } }) => {
               <Image src={data.image} alt="WorkerImage" fill />
               <img
                 className={`${styles.posImage}`}
-                src="/teamSingleImage/teamSinglePosition.svg"
+                src="/TeamSingleImage/teamSinglePosition.svg"
                 alt="Image"
               />
               <div className={`${styles.frameDiv}`}></div>
