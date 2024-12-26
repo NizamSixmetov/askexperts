@@ -32,7 +32,7 @@ async function AboutTeamData() {
                 <div className={`${styles.image}`}>
                   <Image src={image} fill alt="image" />
                   <p>{position}</p>
-                  <Link href={`/Team/${id}`}></Link>
+                  <Link href={`/Team/${id}`} prefetch></Link>
                 </div>
                 <h4>{name}</h4>
                 <p>{description}</p>

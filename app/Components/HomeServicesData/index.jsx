@@ -33,14 +33,15 @@
 
 // export default HomeServicesData;
 
+
+
 import Link from "next/link";
 import styles from "./style.module.css";
 import Image from "next/image";
 
-// Функция для получения данных с кэшированием
 async function fetchData() {
   const response = await fetch(`https://askexpressdata.vercel.app/data/`, {
-    next: { revalidate: 3600 }, // ISR: обновление кэша каждые 3600 секунд (1 час)
+    next: { revalidate: 3600 },
   });
 
   if (!response.ok) {
@@ -59,7 +60,7 @@ const HomeServicesData = async () => {
     <div className="container">
       <div className={`${styles.card}`}>
         {card.map(({ id, url, cap, description }) => (
-          <Link href={`/Services/${id}`} key={id} className={`${styles.flex}`}>
+          <Link href={`/Services/${id}`} prefetch key={id} className={`${styles.flex}`}>
             <Image src={url} width={100} height={100} alt="Image" />
             <h3>{cap}</h3>
             <p>{description}</p>
@@ -71,3 +72,5 @@ const HomeServicesData = async () => {
 };
 
 export default HomeServicesData;
+
+

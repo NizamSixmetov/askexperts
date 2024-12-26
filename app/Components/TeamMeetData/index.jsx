@@ -34,7 +34,7 @@ const TeamMeetData = async () => {
                   <p>{position}</p>
                   <Link
                     className={`${styles.hrefLink}`}
-                    href={`/Team/${id}`}
+                    href={`/Team/${id}`} prefetch
                   ></Link>
                 </section>
                 <section className={`${styles.name}`}>

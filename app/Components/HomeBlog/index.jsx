@@ -146,7 +146,7 @@ const HomeBlog = async () => {
                     <p>{name}</p>
                     <div className={`${styles.smallBorder}`}></div>
                     <p>{date}</p>
-                    <Link href={`/Blog/${id}`}>Read More</Link>
+                    <Link href={`/Blog/${id}`} prefetch>Read More</Link>
                   </div>
                   <div className={`${styles.lineDiv}`}></div>
                 </div>

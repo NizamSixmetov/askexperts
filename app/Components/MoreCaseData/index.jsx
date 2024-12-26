@@ -20,7 +20,7 @@ const MoreCaseData = async () => {
               <div className={`${styles.limitCard}`} key={id}>
                 <Image src={image} fill alt="Image" />
                 <div className={`${styles.insetDiv}`}>
-                  <Link href={`/CaseStudy/${id}`}>
+                  <Link href={`/CaseStudy/${id}`} prefetch>
                     <TiPlus />
                   </Link>
                   <p className={`${styles.limPTop}`}>{name}</p>
