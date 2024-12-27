@@ -68,7 +68,7 @@ const TeamContact = () => {
           <div className={`${styles.right}`}>
             <img
               className={`${styles.relIMage}`}
-              src="/TeamContactimage/TeamContactbg.svg"
+              src="/TeamContactimage/TeamContactbg.jpg"
               alt="Image"
             />
             <img
