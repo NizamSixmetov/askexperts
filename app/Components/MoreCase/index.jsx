@@ -13,7 +13,9 @@ const MoreCase = () => {
           <MoreCaseData />
         </div>
         <div className={`${styles.bottom}`}>
-          <Link href={"/CaseStudy"} prefetch>Browse all case studies</Link>
+          <Link href={"/CaseStudy"} prefetch={true}>
+            Browse all case studies
+          </Link>
         </div>
       </div>
     </div>

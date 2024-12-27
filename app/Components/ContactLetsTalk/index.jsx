@@ -17,7 +17,7 @@ const ContactLetsTalk = () => {
           <div className={`${styles.imageDiv}`}>
             <Image
               fill
-              src={"/ContactLetsTalkImage/ContactImageLeft.svg"}
+              src={"/ContactLetsTalkImage/ContactImageLeft.jpg"}
               alt="Image"
               style={{ objectFit: "cover" }}
             />
