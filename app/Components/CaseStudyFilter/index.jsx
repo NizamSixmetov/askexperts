@@ -120,8 +120,8 @@ const CaseStudyFilter = () => {
               prefetch
               onClick={() => handleCategoryClick("Audit&Evaluation")}
               className={`${selectedCategory === "Audit&Evaluation"
-                  ? styles.bottomActive
-                  : ""
+                ? styles.bottomActive
+                : ""
                 }`}
             >
               Audit & Evaluation
