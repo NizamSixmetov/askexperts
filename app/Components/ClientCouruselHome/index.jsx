@@ -20,21 +20,21 @@ function ClientCouruselHome() {
       >
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
+            <img src="/ClientFreedBack/Client.jpg" alt="Image" />
             <p className={`${styles.nameP}`}>Kathleen Smith</p>
             <p className={`${styles.jobP}`}>Web Designer</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
+            <img src="/ClientFreedBack/Client.jpg" alt="Image" />
             <p className={`${styles.nameP}`}>Simitci Qaqash</p>
             <p className={`${styles.jobP}`}>Copleden</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={`${styles.swiper}`}>
-            <img src="/ClientFreedBack/Photo.svg" alt="Image" />
+            <img src="/ClientFreedBack/Client.jpg" alt="Image" />
             <p className={`${styles.nameP}`}>Bulent Ersoy</p>
             <p className={`${styles.jobP}`}>Rengsaz</p>
           </div>

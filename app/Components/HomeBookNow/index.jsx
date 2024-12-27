@@ -24,7 +24,7 @@ const HomeBookNow = () => {
           </button>
         </div>
         <div className={`${styles.right}`}>
-          <img src="/HomeBookNow/Book.svg" alt="Image" />
+          <img src="/HomeBookNow/Book.png" alt="Image" />
         </div>
       </div>
     </div>

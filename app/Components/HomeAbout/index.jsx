@@ -59,7 +59,7 @@ const HomeAbout = () => {
             />
             <img
               className={`${styles.index2}`}
-              src="/HomeAbout/Photo.svg"
+              src="/HomeAbout/AUR.jpg"
               alt="Image"
             />
             <img
