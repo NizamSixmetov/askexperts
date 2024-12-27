@@ -22,7 +22,7 @@ const BlogSingleBestBusiness = ({ data }) => {
             Override the digital divide with additional clickthroughs from
             DevOps.
           </p>
-          <img src="/BlogSinglePageImage/firstImage.svg" alt="FirstImage" />
+          <img src="/BlogSinglePageImage/firstImage.jpg" alt="FirstImage" />
         </div>
         <div className={`${styles.twoDiv}`}>
           <h2>The Digital Assets For All</h2>
