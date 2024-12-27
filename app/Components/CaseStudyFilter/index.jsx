@@ -120,8 +120,8 @@ const CaseStudyFilter = () => {
               prefetch
               onClick={() => handleCategoryClick("Audit&Evaluation")}
               className={`${selectedCategory === "Audit&Evaluation"
-                ? styles.bottomActive
-                : ""
+                  ? styles.bottomActive
+                  : ""
                 }`}
             >
               Audit & Evaluation
@@ -138,7 +138,7 @@ const CaseStudyFilter = () => {
                 <div className={`${styles.displayDiv}`}>
                   <h5>{product.name}</h5>
                   <p>{product.description}</p>
-                  <Link href={`/CaseStudy/${product.id}`} prefetch>
+                  <Link href={`/CaseStudy/${product.id}`} prefetch={true}>
                     <FaPlus />
                   </Link>
                 </div>
