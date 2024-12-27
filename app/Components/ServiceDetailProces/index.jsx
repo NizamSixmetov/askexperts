@@ -64,13 +64,13 @@ const ServiceDetailProces = () => {
           </div>
           <div className={`${styles.rightDiv}`}>
             <div className={`${styles.leftImage}`}>
-              <img src="/ServiceDetailProcesImage/LeftImage.svg" alt="Image" />
+              <img src="/ServiceDetailProcesImage/leftImage.jpg" alt="Image" />
               <div className={`${styles.posFrame}`}></div>
             </div>
             <div className={`${styles.rightImage}`}>
-              <img src="/ServiceDetailProcesImage/righttop.svg" alt="Image" />
+              <img src="/ServiceDetailProcesImage/righttop.jpg" alt="Image" />
               <img
-                src="/ServiceDetailProcesImage/rightBottom.svg"
+                src="/ServiceDetailProcesImage/rightBottom.jpg"
                 alt="Image"
               />
               <img

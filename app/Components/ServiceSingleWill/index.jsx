@@ -13,7 +13,7 @@ const ServiceSingleWill = () => {
           />
           <img
             className={`${styles.bodyImage}`}
-            src="/ServiceSingleWillImage/PhotoWill.svg"
+            src="/ServiceSingleWillImage/PhotoWill.jpg"
             alt="Image"
           />
           <div className={`${styles.squareDiv}`}></div>

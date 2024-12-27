@@ -10,7 +10,7 @@ const ServicesProcess = () => {
         <div className={`${styles.left}`}>
           <img
             className={`${styles.centerImage}`}
-            src="/ServicesProcessImage/centerImage.svg"
+            src="/ServicesProcessImage/centerImage.jpg"
             alt="image"
           />
           <img
