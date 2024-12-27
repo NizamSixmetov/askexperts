@@ -47,7 +47,7 @@ const AboutVision = () => {
           <div className={`${styles.index2}`}></div>
           <img
             className={`${styles.index3}`}
-            src="/AboutUsImages/Photo1Photo.svg"
+            src="/AboutUsImages/Photo1Photo.jpg"
             alt="Image"
           />
         </div>
