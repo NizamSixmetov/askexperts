@@ -46,7 +46,7 @@ const BlogPageBlogData = async () => {
                     <p>{authorDate}</p>
                   </div>
                   <div className={`${styles.authorLink}`}>
-                    <Link href={`/Blog/${id}`} prefetch>Read More</Link>
+                    <Link href={`/Blog/${id}`} prefetch={true}>Read More</Link>
                   </div>
                 </div>
               </div>

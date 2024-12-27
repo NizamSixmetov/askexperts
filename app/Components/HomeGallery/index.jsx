@@ -31,7 +31,7 @@ const HomeGallery = async () => {
               Our client, global analytical techno company, wanted to build
               market.
             </h2>
-            <Link href={"/CaseStudy"} prefetch>
+            <Link href={"/CaseStudy"} prefetch={true}>
               More Gallery
             </Link>
           </div>
@@ -43,7 +43,7 @@ const HomeGallery = async () => {
                 <div className={`${styles.limitCard}`} key={id}>
                   <Image src={image} layout="fill" alt="ImageTest" />
                   <div className={`${styles.insetDiv}`}>
-                    <Link href={`/CaseStudy/${id}`} prefetch>
+                    <Link href={`/CaseStudy/${id}`} prefetch={true}>
                       <TiPlus />
                     </Link>
                     <p className={`${styles.limPTop}`}>{name}</p>
@@ -55,7 +55,7 @@ const HomeGallery = async () => {
           </div>
         </div>
         <div className={`${styles.responsiveButton}`}>
-          <Link href={"/CaseStudy"} prefetch>
+          <Link href={"/CaseStudy"} prefetch={true}>
             More Gallery
           </Link>
         </div>

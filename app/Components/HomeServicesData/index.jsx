@@ -24,7 +24,7 @@ const HomeServicesData = async () => {
         {card.map(({ id, url, cap, description }) => (
           <Link
             href={`/Services/${id}`}
-            prefetch
+            prefetch={true}
             key={id}
             className={`${styles.flex}`}
           >

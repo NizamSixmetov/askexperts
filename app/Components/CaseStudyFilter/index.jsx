@@ -84,14 +84,14 @@ const CaseStudyFilter = () => {
         <div className={`${styles.filterBg}`}>
           <div className={`${styles.topFilter}`}>
             <button
-              prefetch
+              prefetch={true}
               onClick={() => handleCategoryClick("")}
               className={`${selectedCategory === "" ? styles.topActive : ""}`}
             >
               All
             </button>
             <button
-              prefetch
+              prefetch={true}
               onClick={() => handleCategoryClick("Taxes&Efficiency")}
               className={`${selectedCategory === "Taxes&Efficiency" ? styles.topActive : ""
                 }`}
@@ -99,7 +99,7 @@ const CaseStudyFilter = () => {
               Taxes & Efficiency
             </button>
             <button
-              prefetch
+              prefetch={true}
               onClick={() => handleCategoryClick("InvestmentBanking")}
               className={`${selectedCategory === "InvestmentBanking" ? styles.topActive : ""
                 }`}
@@ -109,7 +109,7 @@ const CaseStudyFilter = () => {
           </div>
           <div className={`${styles.bottomFilter}`}>
             <button
-              prefetch
+              prefetch={true}
               onClick={() => handleCategoryClick("FinancialPlan")}
               className={`${selectedCategory === "FinancialPlan" ? styles.bottomActive : ""
                 }`}
@@ -117,11 +117,11 @@ const CaseStudyFilter = () => {
               Financial Plan
             </button>
             <button
-              prefetch
+              prefetch={true}
               onClick={() => handleCategoryClick("Audit&Evaluation")}
               className={`${selectedCategory === "Audit&Evaluation"
-                  ? styles.bottomActive
-                  : ""
+                ? styles.bottomActive
+                : ""
                 }`}
             >
               Audit & Evaluation

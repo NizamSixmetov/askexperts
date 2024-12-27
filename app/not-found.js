@@ -26,7 +26,7 @@ export default function NotFound() {
                 </p>
               </div>
               <div className={`${styles.bottom}`}>
-                <Link href={"/"} prefetch>
+                <Link href={"/"} prefetch={true}>
                   Back to home
                 </Link>
               </div>

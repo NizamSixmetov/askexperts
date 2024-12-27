@@ -42,7 +42,7 @@ const Navigation = () => {
         <div className="container">
           <div className={`${styles.flexDiv}`}>
             <div className={`${styles.left}`}>
-              <Link href={"/"} prefetch>
+              <Link href={"/"} prefetch={true}>
                 <img src="/Navigation/LogoNavigation.svg" alt="logo" />
               </Link>
             </div>
@@ -60,7 +60,7 @@ const Navigation = () => {
                         }
                       >
                         <Link
-                          prefetch
+                          prefetch={true}
                           href={link.href}
                           key={link.name}
                           className={

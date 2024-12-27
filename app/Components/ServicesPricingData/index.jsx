@@ -63,7 +63,7 @@ const ServicesPricingData = async () => {
                   </div>
                 </div>
                 <div className={`${styles.bottom}`}>
-                  <Link href={"/"} prefetch>Get This Plan</Link>
+                  <Link href={"/"} prefetch={true}>Get This Plan</Link>
                 </div>
               </div>
             );

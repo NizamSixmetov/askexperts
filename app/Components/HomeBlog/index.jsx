@@ -118,7 +118,7 @@ const HomeBlog = async () => {
             <h2>Take a look at our latest articles & resources</h2>
           </div>
           <div className={`${styles.right1}`}>
-            <Link href="/Blog" prefetch>More News</Link>
+            <Link href="/Blog" prefetch={true}>More News</Link>
           </div>
         </div>
         <div className={`${styles.topFlex}`}>
@@ -146,7 +146,7 @@ const HomeBlog = async () => {
                     <p>{name}</p>
                     <div className={`${styles.smallBorder}`}></div>
                     <p>{date}</p>
-                    <Link href={`/Blog/${id}`} prefetch>Read More</Link>
+                    <Link href={`/Blog/${id}`} prefetch={true}>Read More</Link>
                   </div>
                   <div className={`${styles.lineDiv}`}></div>
                 </div>

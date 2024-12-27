@@ -18,7 +18,7 @@ const AboutClients = () => {
               </p>
             </div>
             <div className={`${styles.rightDiv}`}>
-              <Link href={"/Pricing"} prefetch>Get in touch</Link>
+              <Link href={"/Pricing"} prefetch={true}>Get in touch</Link>
             </div>
           </div>
           <div className={`${styles.dataDiv}`}>

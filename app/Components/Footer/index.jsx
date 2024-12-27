@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className={`${styles.baseFlex}`}>
           <div className={`${styles.icon}`}>
-            <Link href={"/"} prefetch>
+            <Link href={"/"} prefetch={true}>
               <img src="/Navigation/LogoNavigation.svg" alt="Logo" />
             </Link>
             <div className={`${styles.socialDiv}`}>
@@ -40,31 +40,31 @@ const Footer = () => {
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Services"} prefetch> Service</Link>
+                  <Link href={"/Services"} prefetch={true}> Service</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={`/FAQ`} prefetch>FAQ</Link>
+                  <Link href={`/FAQ`} prefetch={true}>FAQ</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/error"} prefetch>Single Service</Link>
+                  <Link href={"/error"} prefetch={true}>Single Service</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Quote"} prefetch>Get Quote</Link>
+                  <Link href={"/Quote"} prefetch={true}>Get Quote</Link>
                 </li>
                 <li className={`${styles.li}`}>
                   <i>
                     <TbPointFilled />
                   </i>
-                  <Link href={"/Pricing"} prefetch>Prices</Link>
+                  <Link href={"/Pricing"} prefetch={true}>Prices</Link>
                 </li>
               </ul>
             </div>
@@ -77,37 +77,37 @@ const Footer = () => {
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/About"} prefetch> About</Link>
+                    <Link href={"/About"} prefetch={true}> About</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Blog"} prefetch>News</Link>
+                    <Link href={"/Blog"} prefetch={true}>News</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Contacts"} prefetch>Contacts</Link>
+                    <Link href={"/Contacts"} prefetch={true}>Contacts</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Services"} prefetch>Testimonials</Link>
+                    <Link href={"/Services"} prefetch={true}>Testimonials</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/Team"} prefetch>Our team</Link>
+                    <Link href={"/Team"} prefetch={true}>Our team</Link>
                   </li>
                   <li className={`${styles.li}`}>
                     <i>
                       <TbPointFilled />
                     </i>
-                    <Link href={"/About"} prefetch>Our approach</Link>
+                    <Link href={"/About"} prefetch={true}>Our approach</Link>
                   </li>
                 </ul>
               </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                 <div className={`${styles.compStyle}`}>
                   <LocationLinkFooter />
                 </div>
-                <Link href={"/Contact"} prefetch>Book an Appoinment</Link>
+                <Link href={"/Contact"} prefetch={true}>Book an Appoinment</Link>
               </div>
             </div>
           </div>
