@@ -59,5 +59,3 @@ const BlogPageBlogData = async () => {
 };
 
 export default BlogPageBlogData;
-
-// Burda qalmiwdiq

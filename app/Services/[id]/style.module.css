@@ -15,8 +15,6 @@
   background-color: #f5f5f5a5;
 }
 
-/* Two component */
-
 .flexDiv {
   display: flex;
   flex-direction: column;
