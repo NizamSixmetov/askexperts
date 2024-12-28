@@ -1,14 +1,19 @@
 "use client";
 
+import React, { useRef } from "react";
 import CountUp, { useCountUp } from "react-countup";
+
 const CountUpNum3 = () => {
+  const countUpRef = useRef(null);
+
   useCountUp({
-    ref: "counter",
+    ref: countUpRef,
+    start: 0,
     end: 3,
     enableScrollSpy: true,
-    scrollSpyDelay: 10,
   });
-  return <CountUp start={0} end={3} enableScrollSpy />;
+
+  return <span ref={countUpRef}></span>;
 };
 
 export default CountUpNum3;

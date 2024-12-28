@@ -3,9 +3,7 @@ import styles from "./style.module.css";
 import Image from "next/image";
 
 async function fetchData() {
-  const response = await fetch(`https://askexpressdata.vercel.app/data/`, {
-    next: { revalidate: 3600 },
-  });
+  const response = await fetch(`https://askexpressdata.vercel.app/data/`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch data");

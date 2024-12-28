@@ -17,10 +17,7 @@ export const metadata = {
 
 async function fetchData(id) {
   const res = await fetch(
-    `https://askexpressdata.vercel.app/HomeProccess/` + id,
-    {
-      next: { revalidate: 3600 },
-    }
+    `https://askexpressdata.vercel.app/HomeProccess/` + id
   );
 
   if (!res.ok) {

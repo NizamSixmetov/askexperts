@@ -1,14 +1,6 @@
 import BlogSingleBestBusiness from "@/app/Components/BlogSingleBestBusiness";
 import styles from "./style.module.css";
 
-async function fetchData(id) {
-  const url = await fetch(
-    `https://askexpressdata.vercel.app/blogNewsData/` + id
-  );
-  const result = await url.json();
-  return result;
-}
-
 export const metadata = {
   title: "Article",
   description: "Blog Single page",
@@ -16,6 +8,14 @@ export const metadata = {
     icon: "/metadataIcon/blogSingle.svg",
   },
 };
+
+async function fetchData(id) {
+  const url = await fetch(
+    `https://askexpressdata.vercel.app/blogNewsData/` + id
+  );
+  const result = await url.json();
+  return result;
+}
 
 const BlogSinglePage = async ({ params: { id } }) => {
   const data = await fetchData(id);

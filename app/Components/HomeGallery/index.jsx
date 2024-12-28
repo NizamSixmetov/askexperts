@@ -4,12 +4,7 @@ import Image from "next/image";
 import { TiPlus } from "react-icons/ti";
 
 export async function fetchData() {
-  const res = await fetch(
-    `https://askexpressdata.vercel.app/HomeProccess?_limit=3`,
-    {
-      next: { revalidate: 3600 },
-    }
-  );
+  const res = await fetch(`https://askexpressdata.vercel.app/HomeProccess?_limit=3`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

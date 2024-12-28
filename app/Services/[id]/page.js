@@ -17,9 +17,7 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const response = await fetch(`https://askexpressdata.vercel.app/data/` + id, {
-    next: { revalidate: 3600 },
-  });
+  const response = await fetch(`https://askexpressdata.vercel.app/data/` + id);
 
   if (!response.ok) {
     throw new Error("Failed to fetch data");
