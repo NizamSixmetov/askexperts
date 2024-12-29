@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import Image from 'next/image';
 
 const AboutHistory = () => {
+
   return (
     <div className="container">
       <div className={`${styles.flexDiv}`}>
