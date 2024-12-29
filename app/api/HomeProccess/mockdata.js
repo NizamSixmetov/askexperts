@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     category: "Taxes&Efficiency",
-    image: "/HomeProccess/Photo1.jpg",
+    image: "/HomeProccess/Photo1.svg",
     name: "Taxes & Efficiency",
     description: "Business",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
@@ -31,7 +31,7 @@ export default [
   {
     id: 2,
     category: "Taxes&Efficiency",
-    image: "/HomeProccess/Photo2.jpg",
+    image: "/HomeProccess/Photo2.svg",
     name: "Planning Guide",
     description: "Hobbies",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
@@ -61,7 +61,7 @@ export default [
   {
     id: 3,
     category: "InvestmentBanking",
-    image: "/HomeProccess/Photo3.jpg",
+    image: "/HomeProccess/Photo3.svg",
     name: "Investment banking",
     description: "Business",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
@@ -91,7 +91,7 @@ export default [
   {
     id: 4,
     category: "FinancialPlan",
-    image: "/HomeProccess/Photo4.jpg",
+    image: "/HomeProccess/Photo4.svg",
     name: "Financial Plan",
     description: "Study",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
@@ -121,7 +121,7 @@ export default [
   {
     id: 5,
     category: "FinancialPlan",
-    image: "/HomeProccess/Photo5.jpg",
+    image: "/HomeProccess/Photo5.svg",
     name: "Audit & Evaluation",
     description: "Business",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",
@@ -151,7 +151,7 @@ export default [
   {
     id: 6,
     category: "InvestmentBanking",
-    image: "/HomeProccess/Photo5.jpg",
+    image: "/HomeProccess/Photo5.svg",
     name: "Thematic Study",
     description: "Hobbies",
     preview: "https://www.youtube.com/watch?v=LYxeOwmAwcE",

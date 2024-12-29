@@ -36,7 +36,7 @@ const HomeGallery = async () => {
             {limitCard.map(({ id, image, name, description }) => {
               return (
                 <div className={`${styles.limitCard}`} key={id}>
-                  <Image src={image} layout="fill" alt="ImageTest" />
+                  <Image src={image} fill alt="ImageTest" />
                   <div className={`${styles.insetDiv}`}>
                     <Link href={`/CaseStudy/${id}`} prefetch={true}>
                       <TiPlus />
