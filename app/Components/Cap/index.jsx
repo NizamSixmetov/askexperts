@@ -18,10 +18,18 @@ const Cap = () => {
               </p>
             </div>
             <div className={`${styles.bottom}`}>
-              <Link href={"/Services"} prefetch={true} className={`${styles.leftButton}`}>
+              <Link
+                href={"/Services"}
+                prefetch={true}
+                className={`${styles.leftButton}`}
+              >
                 Our Services
               </Link>
-              <Link href={"/Contact"} prefetch={true} className={`${styles.rightButton}`}>
+              <Link
+                href={"/Contact"}
+                prefetch={true}
+                className={`${styles.rightButton}`}
+              >
                 <i>
                   <SlNotebook />
                 </i>
