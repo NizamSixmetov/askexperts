@@ -5,11 +5,6 @@ import { TiPlus } from "react-icons/ti";
 
 export async function fetchData() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/HomeProccess?_limit=3`);
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
   return res.json();
 }
 

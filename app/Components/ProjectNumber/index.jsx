@@ -25,7 +25,7 @@ function ProjectNumber() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p></p>;
   }
 
   return (
