@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Image from 'next/image';
 
 const AboutHistory = () => {
   return (
@@ -13,6 +14,7 @@ const AboutHistory = () => {
         </p>
         <div className={`${styles.mediaDiv}`}>
           <iframe
+            loading="lazy"
             width="560"
             height="315"
             src="https://www.youtube-nocookie.com/embed/QxpfRN5lfHg?si=raVLkStiuYl1ZOIF"

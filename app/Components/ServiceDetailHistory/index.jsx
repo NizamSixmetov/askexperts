@@ -13,6 +13,7 @@ const ServiceDetailHistory = () => {
           </div>
           <div className={`${styles.bottom}`}>
             <iframe
+              loading="lazy"
               width="750"
               height="300"
               src="https://www.youtube-nocookie.com/embed/QxpfRN5lfHg?si=6377txUGQy82aS3x"
