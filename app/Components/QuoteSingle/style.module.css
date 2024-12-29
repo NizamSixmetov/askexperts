@@ -49,3 +49,53 @@
   rotate: 40deg;
   z-index: -7;
 }
+
+@media screen and (max-width: 1200px) {
+  .quoteDiv {
+    padding: 4rem 5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .quoteDiv {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quoteDiv {
+    padding: 2.5rem 1.5rem;
+    gap: 0.1rem;
+  }
+
+  .quoteDiv > p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .quoteDiv {
+    padding: 2rem 1.1rem;
+    gap: 0rem;
+  }
+
+  .quoteDiv > i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .quoteDiv {
+    padding: 1rem 1rem;
+  }
+
+  .quoteDiv > p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .quoteDiv > i {
+    font-size: 35px;
+  }
+}
