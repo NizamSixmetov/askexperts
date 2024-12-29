@@ -15,7 +15,7 @@ const ServiceDetailHistory = () => {
             <iframe
               width="750"
               height="300"
-              src="https://www.youtube.com/embed/QxpfRN5lfHg?si=6377txUGQy82aS3x"
+              src="https://www.youtube-nocookie.com/embed/QxpfRN5lfHg?si=6377txUGQy82aS3x"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
