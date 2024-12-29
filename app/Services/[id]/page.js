@@ -17,7 +17,9 @@ export const metadata = {
 };
 
 async function fetchData(id) {
-  const response = await fetch(`https://askexpressdata.vercel.app/data/` + id);
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/data/` + id
+  );
 
   if (!response.ok) {
     throw new Error("Failed to fetch data");

@@ -17,7 +17,7 @@ export const metadata = {
 
 async function fetchData(id) {
   const res = await fetch(
-    `https://askexpressdata.vercel.app/HomeProccess/` + id
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/HomeProccess/` + id
   );
 
   if (!res.ok) {

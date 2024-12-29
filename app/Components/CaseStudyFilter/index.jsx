@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 
-const url = `https://askexpressdata.vercel.app/HomeProccess/`;
+const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/HomeProccess/`;
 
 const CaseStudyFilter = () => {
   const [products, setProducts] = useState([]);

@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { FaAngleRight } from "react-icons/fa";
 
 async function fetchData() {
-  const url = await fetch(`https://askexpressdata.vercel.app/aboutPricing/`);
+  const url = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/aboutPricing/`);
   const result = await url.json();
   return result;
 }

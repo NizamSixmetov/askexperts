@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export async function fetchData() {
-  const res = await fetch(`https://askexpressdata.vercel.app/blogNewsData/`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blogNewsData/`);
   return res.json();
 }
 

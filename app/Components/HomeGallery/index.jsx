@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TiPlus } from "react-icons/ti";
 
 export async function fetchData() {
-  const res = await fetch(`https://askexpressdata.vercel.app/HomeProccess?_limit=3`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/HomeProccess?_limit=3`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

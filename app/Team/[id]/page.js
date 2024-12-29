@@ -9,7 +9,7 @@ import TeamSubscribe from "@/app/Components/TeamSubscribe";
 
 async function fetchData(id) {
   const url = await fetch(
-    `https://askexpressdata.vercel.app/teamFullData/` + id
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/teamFullData/` + id
   );
   const result = await url.json();
   return result;

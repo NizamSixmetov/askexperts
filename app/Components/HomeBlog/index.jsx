@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import Image from "next/image";
 
 async function fetchData() {
-  const url = "https://askexpressdata.vercel.app/homeBlog/";
+  const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/homeBlog/`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
