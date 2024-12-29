@@ -11,7 +11,7 @@ export const metadata = {
 
 async function fetchData(id) {
   const url = await fetch(
-    `https://askexpressdata.vercel.app/blogNewsData/` + id
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/blogNewsData/` + id
   );
   const result = await url.json();
   return result;
