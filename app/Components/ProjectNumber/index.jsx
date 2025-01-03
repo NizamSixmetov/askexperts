@@ -10,24 +10,16 @@ const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/projectNumber/`;
 
 function ProjectNumber() {
   const [mockData, setMockData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
         setMockData(response.data);
-        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false);
       });
   }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
 
   return (
     <div className="container">

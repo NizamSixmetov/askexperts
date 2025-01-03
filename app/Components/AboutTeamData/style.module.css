@@ -13,12 +13,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  width: 17%;
+  width: 19%;
 }
 
 .image {
   position: relative;
-  width: 190px;
+  width: 220px;
   height: 250px;
 }
 
@@ -114,8 +114,12 @@
     width: 50%;
   }
 
+  .cardDiv {
+    width: 50%;
+  }
+
   .image {
-    width: 150px;
+    width: 180px;
     height: 200px;
   }
 }
