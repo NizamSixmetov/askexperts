@@ -1,5 +1,6 @@
 import BlogSingleBestBusiness from "@/app/Components/BlogSingleBestBusiness";
 import styles from "./style.module.css";
+import Loader from "@/app/Components/Loader/Loader";
 
 export const metadata = {
   title: "Article",
@@ -24,10 +25,27 @@ const BlogSinglePage = async ({ params: { id } }) => {
       <div className={`${styles.marginDiv}`}>
         <div className={`${styles.bgDiv}`}>
           <div className="container">
-            <div className={`${styles.containerDiv}`}>
-              <p>{data.authorDate}</p>
-              <h4>{data.cap}</h4>
-            </div>
+            {data.id > 0 ? (
+              <div className={`${styles.containerDiv}`}>
+                <p>{data.authorDate}</p>
+                <h4>{data.cap}</h4>
+              </div>
+            ) : (
+              <h1
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  textAlign: "left",
+                  color: "#181818",
+                  width: "fit-content",
+                  backgroundColor: "white",
+                  padding: ".5rem",
+                  borderRadius: "0.5rem",
+                }}
+              >
+                Date and title are not available
+              </h1>
+            )}
           </div>
         </div>
       </div>
