@@ -5,6 +5,7 @@ import { FaPlus } from "react-icons/fa6";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "../Loader/Loader";
 
 const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/HomeProccess/`;
 
@@ -91,17 +92,7 @@ const CaseStudyFilter = () => {
             </div>
           ))
         ) : (
-          <h2
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              margin: "0 auto",
-              padding: "1rem",
-              color: "#ffcc4a",
-            }}
-          >
-            Not found Case
-          </h2>
+          <Loader />
         )}
       </div>
     </div>
